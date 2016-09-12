@@ -1,0 +1,78 @@
+
+<div class="sf-container search-filters">
+    <div class="search-filters-inner">
+        <div style="text-align: right;">
+            <a class="search-filter-button glyphicon glyphicon-remove" href="javascript:void(0)"></a>
+        </div>
+        <h1 class="inline-heading">Find and Filter</h1>&nbsp;<a href="javascript:void(0)" id="ResetSearch">Clear all filters</a>
+        <div class="pad-bottom">
+            Use the filter and keyword search below to find apps that matter to you.
+        </div>
+
+        <form id="AdvancedSearch" class="form-horizontal">
+            <input id="Page" name="Page" value="1" type="hidden">
+            <div class="pad-bottom">
+                <h2>Refine results by:</h2>
+                <div class="treeview">
+                    <ul>
+                        {% assign categories = site.data.categories %}
+                        {% for category in categories %}
+                        <li>
+                            <input type="checkbox" id="chk{{ category.name }}">
+                            <label>
+                                <input class="search-value" name="Filters" type="checkbox">
+                                <span class="treeview-checkbox"></span>
+                            </label>
+                            <label class="tree-root" for="chk{{ category.name }}">
+                                {{ category.showAs }} <label class="items-selected"></label>
+                            </label>
+                            <ul>
+                                {% assign items = category.values %}
+                                {% for item in items %}
+                                <li>
+                                    <input type="checkbox">
+                                    <label>
+                                        <input class="search-value" name="Isv{{ category.name }}" type="checkbox" value="{{ item.name }}">
+                                        <span class="treeview-checkbox"></span>
+                                    </label>
+                                    {{ item.showAs }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <div>
+                        <input id="SearchPhraseScope" name="SearchPhraseScope" value="Application" type="hidden">
+                        <div class="input-group pad-bottom">
+                            <input aria-label="..." class="form-control" id="SearchPhraseText" name="SearchPhraseText" placeholder="Enter keyword here (optional)" value="" type="text">
+                            <div class="input-group-btn dropup hide">
+                                <a id="SearchPhraseScopeButton" class="btn btn-default btn-search-scope dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span id="SearchPhraseScopeString">Application</span> <span class="caret"></span>
+                                </a>
+                                <ul id="SearchPhraseScopeSelection" class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a data-searchphrasescope="1" href="#">Account</a>
+                                    </li>
+                                    <li>
+                                        <a data-searchphrasescope="2" href="#">Application</a>
+                                    </li>
+                                    <li>
+                                        <a data-searchphrasescope="3" href="#">Description</a>
+                                    </li>
+                                    <li>
+                                        <a data-searchphrasescope="4" href="#">Success Stories</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-search search-refine hide">Search or Refine</button>
+            <button type="button" class="btn btn-primary btn-search search-all">Browse All Documents</button>
+        </form>
+    </div>
+</div>
+<div class="search-filters-fade-in"></div>

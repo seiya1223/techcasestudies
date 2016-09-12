@@ -3,6 +3,14 @@ layout: default
 ---
 
 <div class="home">
+  <a class="search-filter-button header-search-button" href="#">
+      <i class="glyphicon glyphicon-search pad-right"></i>
+      <span class="hidden-xs">&nbsp;Find and Filter</span>
+  </a>
+  <input id="nav-trigger" class="nav-trigger" type="checkbox">
+
+  {% include search.html %}
+  
   <ul id="container" class="post-list js-packery"
     data-packery-options='{ "itemSelector": ".item" }'>
     {% for post in site.posts %}
