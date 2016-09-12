@@ -5,7 +5,7 @@ author: "Malgosia Mazany"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-09-01
-categories: Xamarin Mobile Application Solution
+categories: Mobile Application Development with Xamarin
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: This article is aimed a providing a template to create Xamarin Hackfest articles.
