@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/evidences.git"
+    "url": "git+https://github.com/Microsoft/techcasestudies.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Microsoft/evidences/issues"
+    "url": "https://github.com/Microsoft/techcasestudies/issues"
   },
-  "homepage": "https://github.com/Microsoft/evidences#readme",
+  "homepage": "https://github.com/Microsoft/techcasestudies#readme",
   "devDependencies": {
     "mocha": "^2.5.3"
   }

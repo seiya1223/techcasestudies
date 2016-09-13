@@ -35,7 +35,7 @@ We quickly concluded that we needed to conduct a Value Stream Mapping exercise t
 
 The following diagram shows the outcome of the Value Stream Mapping exercise at this PSP; the red notes are the identified areas of improvement. From this exercise we learned that this organization had challenges with testing and the release process.
 
-![](/images/LeadingPSP_1.png)
+![]({{ site.baseurl }}/images/LeadingPSP_1.png)
 
 Testing had several challenges:  
 
