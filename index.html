@@ -14,7 +14,7 @@ layout: default
   <ul id="container" class="post-list js-packery"
     data-packery-options='{ "itemSelector": ".item" }'>
     {% for post in site.posts %}
-      <li class="item{% if post.size > 1 %} {{ post.size }}{% endif %}">
+      <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}">
         <div class="card">
           <div class="card-image {{ post.color }}">
             <a href="{{ post.url | prepend: site.baseurl }}">

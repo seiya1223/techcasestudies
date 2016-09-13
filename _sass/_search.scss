@@ -219,6 +219,16 @@ label {
 .treeview input[type="checkbox"]:checked~label[for]::before {
 	content:"▼"
 }
+// Override site's styles
+.treeview input[type="checkbox"] + label {
+	padding-left: 0;
+}
+.treeview input[type="checkbox"] + label::before {
+	content:'';
+	width:0;
+	display: none;
+}
+
 .treeview label {
 	cursor:pointer
 }
@@ -280,7 +290,11 @@ label {
 	user-select:none
 }
 .treeview li ul {
-	margin-left:30px
+	margin-left:30px;
+	list-style-type:none;
+}
+.treeview ul li {
+	list-style-type:none;
 }
 .treeview-label {
 	vertical-align:top;
@@ -305,7 +319,7 @@ label {
 	}
 	.form-inline .input-group {
 		display:inline-table;
-		vertical-align:middle
+		vertical-align:middle;
 	}
 	.form-inline .input-group .form-control,.form-inline .input-group .input-group-addon,.form-inline .input-group .input-group-btn {
 		width:auto
@@ -994,7 +1008,9 @@ tbody.collapse.in {
 .input-group {
 	position:relative;
 	display:table;
-	border-collapse:separate
+	border-collapse:separate;
+	width: 100%;
+	margin-top: 10px;
 }
 .input-group[class*=col-] {
 	float:none;

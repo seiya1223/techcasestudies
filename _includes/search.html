@@ -10,7 +10,6 @@
         </div>
 
         <form id="AdvancedSearch" class="form-horizontal">
-            <input id="Page" name="Page" value="1" type="hidden">
             <div class="pad-bottom">
                 <h2>Refine results by:</h2>
                 <div class="treeview">
@@ -30,12 +29,14 @@
                                 {% assign items = category.values %}
                                 {% for item in items %}
                                 <li>
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="item-{{ category.name }}-{{ item.name }}">
                                     <label>
                                         <input class="search-value" name="Isv{{ category.name }}" type="checkbox" value="{{ item.name }}">
                                         <span class="treeview-checkbox"></span>
                                     </label>
-                                    {{ item.showAs }}
+                                    <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
+                                        {{ item.showAs }}
+                                    </label>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -53,16 +54,7 @@
                                 </a>
                                 <ul id="SearchPhraseScopeSelection" class="dropdown-menu dropdown-menu-right">
                                     <li>
-                                        <a data-searchphrasescope="1" href="#">Account</a>
-                                    </li>
-                                    <li>
-                                        <a data-searchphrasescope="2" href="#">Application</a>
-                                    </li>
-                                    <li>
-                                        <a data-searchphrasescope="3" href="#">Description</a>
-                                    </li>
-                                    <li>
-                                        <a data-searchphrasescope="4" href="#">Success Stories</a>
+                                        <a data-searchphrasescope="1" href="#">Technical Solution Stories</a>
                                     </li>
                                 </ul>
                             </div><!-- /btn-group -->
@@ -70,8 +62,8 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary btn-search search-refine hide">Search or Refine</button>
-            <button type="button" class="btn btn-primary btn-search search-all">Browse All Documents</button>
+            <button type="button" class="btn btn-primary btn-search search-refine hide" onclick="return false" >Search or Refine</button>
+            <button type="button" class="btn btn-primary btn-search search-all" onclick="return false" >Browse All Stories</button>
         </form>
     </div>
 </div>
