@@ -6,7 +6,7 @@
         </div>
         <h1 class="inline-heading">Find and Filter</h1>&nbsp;<a href="javascript:void(0)" id="ResetSearch">Clear all filters</a>
         <div class="pad-bottom">
-            Use the filter and keyword search below to find apps that matter to you.
+            Use the filter and keyword search below to find stories that matter to you.
         </div>
 
         <form id="AdvancedSearch" class="form-horizontal">
@@ -45,7 +45,6 @@
                     </ul>
 
                     <div>
-                        <input id="SearchPhraseScope" name="SearchPhraseScope" value="Application" type="hidden">
                         <div class="input-group pad-bottom">
                             <input aria-label="..." class="form-control" id="SearchPhraseText" name="SearchPhraseText" placeholder="Enter keyword here (optional)" value="" type="text">
                             <div class="input-group-btn dropup hide">
@@ -62,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary btn-search search-refine" onclick="return customSearch.applyFilters()" >Search or Refine</button>
+            <button type="button" class="btn btn-primary btn-search search-refine hide" onclick="return customSearch.applyFilters()" >Search or Refine</button>
             <button type="button" class="btn btn-primary btn-search search-all" onclick="return customSearch.removeFilters()" >Browse All Stories</button>
         </form>
     </div>
