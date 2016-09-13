@@ -9,8 +9,8 @@ categories: Mobile Application Development with Xamarin
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: This article is aimed a providing a template to create Xamarin Hackfest articles.
-language: "The language of the article (e.g.: English)"
-verticals: "The vertical markets this article has focus on (e.g.: Energy, Manufacturing, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Retail)"
+language: The language of the article (e.g.: English)
+verticals: The vertical markets this article has focus on (e.g.: Energy, Manufacturing, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Retail)
 ---
 
 ## Learning from Building a Mobile Application with *Customer_Name* ##
