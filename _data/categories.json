@@ -13,7 +13,7 @@
                 "showAs":"IoT"
             },
             {
-                "name":"MMobileApplicationDevelopmentwithXamarin",
+                "name":"MobileApplicationDevelopmentwithXamarin",
                 "showAs":"Mobile Application Development with Xamarin"
             },
             {
@@ -33,7 +33,7 @@
             },
             {
                 "name":"Manufacturing",
-                "showAs":"Manufactoring (Industrial)"
+                "showAs":"Manufacturing (Industrial)"
             },
             {
                 "name":"TransportaionLogistics",
@@ -58,6 +58,22 @@
             {
                 "name":"Retail",
                 "showAs":"Retail"
+            },
+            {
+                "name":"Financial Services",
+                "showAs":"Financial Services"
+            },
+            {
+                "name":"Retail/Consumer Products, Services",
+                "showAs":"Retail/Consumer Products, Services"
+            },
+            {
+                "name":"Manufacturing/Resources",
+                "showAs":"Manufacturing/Resources"
+            },
+            {
+                "name":"Communications/Media",
+                "showAs":"Communications/Media"
             }
         ]
     },
