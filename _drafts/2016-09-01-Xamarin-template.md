@@ -5,12 +5,12 @@ author: "Malgosia Mazany"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-09-01
-categories: Mobile Application Development with Xamarin
+categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: This article is aimed a providing a template to create Xamarin Hackfest articles.
 language: The language of the article (e.g.: English)
-verticals: The vertical markets this article has focus on (e.g.: Energy, Manufacturing, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Retail)
+verticals: The vertical markets this article has focus on (e.g.: Energy, Manufacturing, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare)
 ---
 
 ## Learning from Building a Mobile Application with *Customer_Name* ##

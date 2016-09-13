@@ -13,11 +13,11 @@
                 "showAs":"IoT"
             },
             {
-                "name":"MobileApplicationDevelopmentwithXamarin",
+                "name":"Mobile Application Development with Xamarin",
                 "showAs":"Mobile Application Development with Xamarin"
             },
             {
-                "name":"AzureServicesFunctions",
+                "name":"Azure Services/Functions",
                 "showAs":"Azure Services/Functions"
             }
         ]
@@ -32,15 +32,15 @@
                 "showAs":"Energy"
             },
             {
-                "name":"Manufacturing",
+                "name":"Manufacturing (Industrial)",
                 "showAs":"Manufacturing (Industrial)"
             },
             {
-                "name":"TransportaionLogistics",
+                "name":"Transportaion & Logistics",
                 "showAs":"Transportation & Logistics"
             },
             {
-                "name":"SmartCities",
+                "name":"Smart Cities",
                 "showAs":"Smart Cities"
             },
             {
@@ -56,20 +56,12 @@
                 "showAs":"Healthcare"
             },
             {
-                "name":"Retail",
-                "showAs":"Retail"
-            },
-            {
                 "name":"Financial Services",
                 "showAs":"Financial Services"
             },
             {
-                "name":"Retail/Consumer Products, Services",
-                "showAs":"Retail/Consumer Products, Services"
-            },
-            {
-                "name":"Manufacturing/Resources",
-                "showAs":"Manufacturing/Resources"
+                "name":"Retail, Consumer Products & Services",
+                "showAs":"Retail, Consumer Products & Services"
             },
             {
                 "name":"Communications/Media",
