@@ -22,5 +22,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/packery/1.4.2/packery.pkgd.min.js"></script>
     <script src="{{ "/javascripts/main.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/javascripts/interactions.js" | prepend: site.baseurl }}"></script>
+    {% if page.custom_js %}
+        {% for js_file in page.custom_js %}
+    <script src="{{ "/javascripts/" | prepend: site.baseurl }}{{js_file}}"></script>
+        {% endfor %}
+    {% endif %}
 </body>
 </html>

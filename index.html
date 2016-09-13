@@ -1,5 +1,7 @@
 ---
 layout: default
+custom_js:
+- search.js
 ---
 
 <div class="home">
@@ -14,7 +16,7 @@ layout: default
   <ul id="container" class="post-list js-packery"
     data-packery-options='{ "itemSelector": ".item" }'>
     {% for post in site.posts %}
-      <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}">
+      <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}" id="{{ post.id | slugify }}">
         <div class="card">
           <div class="card-image {{ post.color }}">
             <a href="{{ post.url | prepend: site.baseurl }}">
