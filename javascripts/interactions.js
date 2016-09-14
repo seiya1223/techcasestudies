@@ -9,7 +9,8 @@ var interactions = (function () {
     }
 
     function scrollInterval() {
-        if (!appInsights || !hasScrolled) {
+        // Fixed error when appInsights is not defined
+        if (typeof appInsights === 'undefined' || !appInsights || !hasScrolled) {
             return;
         }
 
