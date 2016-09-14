@@ -17,8 +17,8 @@
                 "showAs":"Mobile Application Development with Xamarin"
             },
             {
-                "name":"Azure Services/Functions",
-                "showAs":"Azure Services/Functions"
+                "name":"Azure App Service",
+                "showAs":"Azure App Service"
             }
         ]
     },
