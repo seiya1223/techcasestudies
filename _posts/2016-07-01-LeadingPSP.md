@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning from a DevOps Hackfest with a Leading Professoinal Services Provider"
+title: "Learning from a DevOps Hackfest with a Leading Professional Services Provider"
 author: "Rasmus Hald"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
