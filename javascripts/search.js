@@ -66,8 +66,22 @@ var customFilter = (function($){
             return true 
         }
 
-        // TODO Implement keyboard search
-        return true;
+        // Search title and then in the excerpt
+        var searchRegEx = new RegExp(keywords, "i");
+        var result = post.title.search(searchRegEx);
+    
+        if (result < 0) {
+            result = post.excerpt.search(searchRegEx);
+    
+            //TODO: Include content search
+            /*
+            if (result < 0) {
+                result = post.content.search(searchRegEx);
+            }
+            */
+        }
+
+        return result >= 0;    
     }
 
     mod.removeFilters = function () {
