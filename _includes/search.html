@@ -1,3 +1,20 @@
+{% assign categories = "" | split: "|" %}
+
+{% for category in site.data.categories %}
+    {% assign categoryElements = "" | split: "|" %}    
+
+    {% for post in site.posts %}
+
+        {% if categoryElements contains post[category.metadataField] %}
+        {% else %}
+            {% assign categoryElements = categoryElements | push: post[category.metadataField]  %}
+        {% endif %}
+
+    {% endfor %}
+
+    {% assign categories = categories | push: categoryElements %}
+
+{% endfor %}
 
 <div class="sf-container search-filters">
     <div class="search-filters-inner">
@@ -14,8 +31,8 @@
                 <h2>Refine results by:</h2>
                 <div class="treeview">
                     <ul>
-                        {% assign categories = site.data.categories %}
-                        {% for category in categories %}
+                        {% assign i = 0 %}
+                        {% for category in site.data.categories %}
                         <li>
                             <input type="checkbox" id="chk{{ category.name }}">
                             <label>
@@ -26,21 +43,22 @@
                                 {{ category.showAs }} <label class="items-selected"></label>
                             </label>
                             <ul>
-                                {% assign items = category.values %}
+                                {% assign items = categories[i] %}
                                 {% for item in items %}
                                 <li>
                                     <input type="checkbox" id="item-{{ category.name }}-{{ item.name }}">
                                     <label>
-                                        <input class="search-value" name="Isv{{ category.name }}" type="checkbox" value="{{ item.name }}">
+                                        <input class="search-value" name="Isv{{ category.name }}" type="checkbox" value="{{ item }}">
                                         <span class="treeview-checkbox"></span>
                                     </label>
                                     <label class="remove-tree-control treeview-label" for="idc3c1668c-a145-4316-b84b-aa747027b20f">
-                                        {{ item.showAs }}
+                                        {{ item }}
                                     </label>
                                 </li>
                                 {% endfor %}
                             </ul>
                         </li>
+                            {% assign i = i | plus: 1 %}
                         {% endfor %}
                     </ul>
 
