@@ -10,8 +10,6 @@ var customFilter = (function($){
 
         $.getJSON("posts.json", function(data){
 
-            $articles.hide();
-
             $.each(data, function(key, val){
 
                 // Check if matches all the filters
@@ -29,6 +27,7 @@ var customFilter = (function($){
 
             });
 
+            $articles.hide();
             $.each(matchingArticles, function(key, data){
                 $(".carditem#" + data).show();
             });
@@ -129,7 +128,6 @@ var customSearch = (function($){
 
         // Close search
         closeSearch();
-
         return false;
     }
 
@@ -149,7 +147,11 @@ var customSearch = (function($){
     }
 
     var buildQueryString = function(formId){
-      return $("#" + formId).serialize();
+        return $.map($("#" + formId).serializeArray(), function(val) {
+            // ignore empty textboxes
+            if (val.value != "" )
+                return [val.name, encodeURIComponent(val.value)].join('=');
+        }).join('&');
     }
 
     var closeSearch = function() {
@@ -217,6 +219,12 @@ var customSearch = (function($){
 
         });
 
+        // Added logic to re-apply filters when page is reloaded
+        window.onpopstate = function(event) {
+            reApplyFilters();
+        };
+
+        reApplyFilters();
     });
 
     // The search button will display either a "browse all" or "search" message, depending on whether or not any filters are selected.
@@ -281,6 +289,68 @@ var customSearch = (function($){
         $("input:checkbox.search-value + span.partial-check").removeClass("partial-check");
 
         ToggleSearchButton();
+    }
+
+    function getQueryString() {
+
+        var query_string = {};
+        var query = window.location.search.substring(1);
+        if (!query) { 
+            if (window.location.hash) 
+                query = window.location.hash.replace("#", ""); 
+        }
+
+        if (!query) 
+            return "";
+
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+                // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+            query_string[pair[0]] = decodeURIComponent(pair[1]);
+                // If second entry with this name
+            } else if (typeof query_string[pair[0]] === "string") {
+            var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+            query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            } else {
+            query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+        } 
+        return query_string;
+    };
+
+    function reApplyFilters() {
+        // Apply the selected filters when the page is reloaded
+        console.log("Re-applying filters");
+        var queryString = getQueryString();
+        resetSearchForm();
+
+        if (queryString) {
+    
+            $.each(queryString, function(param, value){
+                var $element = $("[name=" + param + "]");
+                if($element.prop("type")=="checkbox"){
+                    if (Array.isArray(value)) {
+                        $.each(value, function(key, val){
+                            $("input:checkbox[name='" + param + "'][value='" + val + "']").prop("checked", true);    
+                        });
+                    } else {
+                        $("input:checkbox[name='" + param + "'][value='" + value + "']").prop("checked", true);    
+                    }
+                    TogglePartialCheckmarks($element.first());
+                } else {
+                    $("[name=" + param + "]").val(value);
+                }
+            });
+
+            ToggleSearchButton();
+
+            customSearch.applyFilters(false);
+        } else {
+            customSearch.removeFilters(false);
+        }
     }
 
 }(jQuery));
