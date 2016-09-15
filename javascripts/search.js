@@ -35,6 +35,16 @@ var customFilter = (function($){
             // Force layout
             $("#container").packery();
 
+            var filterResult = matchingArticles.length > 0;
+
+            if (filterResult) {
+                $("#no-results").hide();
+            } else {
+                $("#no-results").show();
+            }
+
+            return (filterResult);
+
         });
 
     }
@@ -119,15 +129,16 @@ var customSearch = (function($){
 
         var keywordSearch = $("#SearchPhraseText").val();
         
-        customFilter.applyFilter(selectedFilters, keywordSearch);
+        var filterResult = customFilter.applyFilter(selectedFilters, keywordSearch);
+
+        // Close search
+        closeSearch();
 
         if (updateHash) {
             var query = buildQueryString("AdvancedSearch");
             window.location.hash = query;
         }
 
-        // Close search
-        closeSearch();
         return false;
     }
 
