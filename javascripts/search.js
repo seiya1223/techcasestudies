@@ -82,12 +82,9 @@ var customFilter = (function($){
         if (result < 0) {
             result = post.excerpt.search(searchRegEx);
     
-            //TODO: Include content search
-            /*
             if (result < 0) {
                 result = post.content.search(searchRegEx);
             }
-            */
         }
 
         return result >= 0;    
