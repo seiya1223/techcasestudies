@@ -62,7 +62,7 @@ Each customer has its dedicated OCC infrastructure, and the number of virtual ma
 We spent the first day and a half establishing a Value Stream Map (VSM) of the current delivery process, from conception to production.
 This activity generated great discussions among the team and allowed everyone to see the big picture—not just their part of the process.
 
-<img src="/images/orckestra2.jpg" alt="Value Stream Mapping" style="width: 90%;"/>
+![Value Stream Mapping]({{site.baseurl}}/images/orckestra2.jpg)
 
 As the Value Stream Map shows, there are actually two teams working sequentially to deliver the final product.  
 The first team (Product Core Team) is working on the core platform (OCC), features that are common to every customer. Its processes are described by the top row in the image above. 
