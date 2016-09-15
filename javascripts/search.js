@@ -105,7 +105,7 @@ var customFilter = (function($){
 var customSearch = (function($){
     var search = [];
 
-    search.applyFilters = function () {
+    search.applyFilters = function (updateHash) {
         var selectedFilters = {};
 
         {% assign categories = site.data.categories %}
@@ -122,20 +122,34 @@ var customSearch = (function($){
         
         customFilter.applyFilter(selectedFilters, keywordSearch);
 
+        if (updateHash) {
+            var query = buildQueryString("AdvancedSearch");
+            window.location.hash = query;
+        }
+
         // Close search
         closeSearch();
 
         return false;
     }
 
-    search.removeFilters = function(){
+    search.removeFilters = function(updateHash){
 
         customFilter.removeFilters();
+
+        if (updateHash) {
+            var query = buildQueryString("AdvancedSearch");
+            window.location.hash = query;
+        }
 
         // Close search
         closeSearch();
 
         return false;
+    }
+
+    var buildQueryString = function(formId){
+      return $("#" + formId).serialize();
     }
 
     var closeSearch = function() {
