@@ -14,6 +14,9 @@
         {% assign categoryElements = "" | split: "|" %}    
     
         {% for post in site.posts %}
+            
+            {% comment %} Convert the post metadata into an array, so it can handle the same way no mather what data type the metadata has {% endcomment %}
+
             {% assign postDataArray = post[category.metadataField] | join: "##" | split: "##"   %}
 
             {% for postData in postDataArray %}
