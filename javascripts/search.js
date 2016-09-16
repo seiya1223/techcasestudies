@@ -119,7 +119,7 @@ var customSearch = (function($){
         selectedFilters.{{ category.name }} = {};
         selectedFilters.{{ category.name }}.metadataField = '{{ category.metadataField }}';
         selectedFilters.{{ category.name }}.values = [];
-        $.each( $("input[name=Isv{{ category.name }}]:checked"), function(){
+        $.each( $("input[name={{ category.name }}]:checked"), function(){
             selectedFilters.{{ category.name }}.values.push($(this).val());
         });
         {% endfor %}

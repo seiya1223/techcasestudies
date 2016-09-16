@@ -1,16 +1,16 @@
 [
     {
-        "name":"Technology",
+        "name":"technology",
         "showAs":"Technology",
         "metadataField":"categories"
     },
     {
-        "name":"Verticals",
+        "name":"verticals",
         "showAs":"Verticals",
         "metadataField":"verticals"
     },
     {
-        "name":"Language",
+        "name":"language",
         "showAs":"Language",
         "metadataField":"language"
     }
