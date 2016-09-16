@@ -14,11 +14,16 @@
         {% assign categoryElements = "" | split: "|" %}    
     
         {% for post in site.posts %}
+            {% assign postDataArray = post[category.metadataField] | join: "##" | split: "##"   %}
 
-            {% if categoryElements contains post[category.metadataField] %}
-            {% else %}
-                {% assign categoryElements = categoryElements | push: post[category.metadataField]  %}
-            {% endif %}
+            {% for postData in postDataArray %}
+
+                {% if categoryElements contains postData %}
+                {% else %}
+                    {% assign categoryElements = categoryElements | push: postData  %}
+                {% endif %}
+
+            {% endfor %}
 
         {% endfor %}
 
