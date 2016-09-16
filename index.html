@@ -1,12 +1,22 @@
 ---
 layout: default
+custom_js:
+- search.js
 ---
 
 <div class="home">
+  <a class="search-filter-button header-search-button" href="#">
+      <i class="glyphicon glyphicon-search pad-right"></i>
+      <span class="hidden-xs">&nbsp;Find and Filter</span>
+  </a>
+  <input id="nav-trigger" class="nav-trigger" type="checkbox">
+
+  {% include search.html %}
+  
   <ul id="container" class="post-list js-packery"
     data-packery-options='{ "itemSelector": ".item" }'>
     {% for post in site.posts %}
-      <li class="item{% if post.size > 1 %} {{ post.size }}{% endif %}">
+      <li class="carditem item{% if post.size > 1 %} {{ post.size }}{% endif %}" id="{{ post.id | slugify }}">
         <div class="card">
           <div class="card-image {{ post.color }}">
             <a href="{{ post.url | prepend: site.baseurl }}">
@@ -31,4 +41,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <div class="row" id="no-results" style="display:none">
+    <div class="col s12">No matches were found for your search criteria. Please adjust your criteria and try again.</div>
+  </div>
 </div>

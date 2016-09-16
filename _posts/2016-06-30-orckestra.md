@@ -9,6 +9,8 @@ categories: DevOps
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt:  This article is aimed at sharing the learnings from the DevOps Hackfest with Orckestra.
+verticals: Retail, Consumer Products & Services
+language: English
 ---
 
 # Learnings from a DevOps Hackfest with Orckestra #

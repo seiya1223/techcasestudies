@@ -9,6 +9,8 @@ categories: DevOps
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: In this DevOps Hackfest, Microsoft teamed up with a leading provider of professional services to improve their development processes with a focus on automated testing and release management. We describe the process and the result in this article.
+verticals: Financial Services
+language: English
 ---
 
 ## Learnings from a DevOps Hackfest with a Leading Professional Services Provider ##

@@ -9,6 +9,8 @@ categories: DevOps
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft teamed up with Karadamedica to hack integrated Microsoft DevOps technologies on Azure.
+verticals: Healthcare
+language: English
 ---
 
 ## Learnings from a DevOps Hackfest with Karadamedica ##
