@@ -4,21 +4,26 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 65px;
+    min-height: 50px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 0px;
-    line-height: 0px;
+    font-size: 26px;
+    line-height: 26px;
     margin: 9px 2px 0 16px;
     float: left;
+}
 
+a.site-title, .site-title a {
     &,
+    &:hover,
     &:visited {
         color: $grey-color-dark;
+        text-decoration: none;
+        font-weight: bold;
     }
 }
 
@@ -28,22 +33,6 @@
 
 .site-title.slim::before {
     margin: 0;
-}
-
-.site-title::before {
-	content: "";
-	background-image: url("../images/logo.png");
-	background-repeat: no-repeat;
-    background-size: contain;
-	height: 40px;
-	width: 350px;
-	display: inline-block;
-	margin: 8px 0 0 0;
-	vertical-align: sub;
-    @include retina {
-    	background-image: url("../images/logo_retina.png");
-        background-size: contain;
-    }
 }
 
 .site-nav {

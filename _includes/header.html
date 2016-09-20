@@ -5,7 +5,14 @@
                 <a class="site-title slim" href="{{ site.baseurl }}/" title="">{{ site.title }}</a>
             </div>
         {% else %}
-            <a class="site-title" href="{{ site.baseurl }}/" title="">{{ site.title }}</a>
+            <div class="site-title">
+                <a class="" href="{{ site.baseurl }}/" title="">{{ site.title }}
+                </a>
+                <a class="search-filter-button" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
         {% endif %}
         <!-- In the freezer until we have pages
         <nav class="site-nav">
