@@ -17,7 +17,8 @@ verticals: The vertical markets this article has focus on (e.g.: Energy, Manufac
 
  
 ## Customer ##
-Who are they? What do they do?
+Who are they? 
+What do they do?
 
  
 ## Pain point ##
@@ -28,7 +29,8 @@ Paragraph on the business pain point they were experiencing. Include things like
 ## Solution ##
 
 
-IoT proposed solution will do X and help with the pain points above by Y. Future potential to their business and operations.
+IoT proposed solution will do X and help with the pain points above by Y. 
+Future potential to their business and operations.
 
 ##Architecture##
 
