@@ -16,29 +16,31 @@ verticals: The vertical markets this article has focus on (e.g.: Energy, Manufac
 ## Title ##
 
  
-## Challenge ##
-**What was the problem the ISV was looking to solve? Why did they need a solution?**
+## Customer ##
+Who are they? What do they do?
 
-- Describe the benefits and opportunity in partnering with MSFT.
-- What are the business needs that the MSFT partnership assisted you in solving?
+ 
+## Pain point ##
+
+Paragraph on the business pain point they were experiencing. Include things like costs, customer experience, etc.
 
  
 ## Solution ##
 
 
-**How did you partner with MSFT to determine a solution?**
+IoT proposed solution will do X and help with the pain points above by Y. Future potential to their business and operations.
 
+##Architecture##
 
-- What is different as a result of implementing MSFT technology/the MSFT partnership?
-(This could be customer focused or internal, including things like: changes to process; business expansion; or loss/issues prevention, etc.)
- 
-## Benefit ##
+Schema of the solution architecture.
 
+##Device used & Code artifacts
 
-**Sustained momentum:**
+##Opportunities going forward
 
-- How did you achieve success? How do you think about replicating the success?
+This section is optional, but if you have details on how the customer plans to proceed or what more they hope to accomplish, please include.
 
-- What are some quantifiable metrics you can provide to show the benefits of partnering with MSFT?
+##Conclusion##
+
 
 
