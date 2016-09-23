@@ -40,13 +40,13 @@ Proposed solution will do X and help with the pain points above by Y.
 
 Future potential to their business and operations.
 
-⋅⋅**Technical Details**
+**Technical Details**
 
-⋅⋅**Architecture**
+**Architecture**
 
-⋅⋅**Code artifacts**
+**Code artifacts**
 
-⋅⋅**Key learnings**
+**Key learnings**
  
 ## Conclusion ##
 
@@ -55,8 +55,8 @@ Benefits to the company as a result of the hackfest.
 
 
 ## General lessons ##
-⋅⋅**Insights**
+**Insights**
 
-⋅⋅**How can the learnings and insights be applied elsewhere**
+**How can the learnings and insights be applied elsewhere**
 
-⋅⋅**Resources**
+**Resources**
