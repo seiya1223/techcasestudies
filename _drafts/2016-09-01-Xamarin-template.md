@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: This article is aimed a providing a template to create Xamarin Hackfest articles.
 language: The language of the article (e.g.: English)
-verticals: The vertical markets this article has focus on (e.g.: Energy, Manufacturing, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare)
+verticals: The vertical markets this article has focus on (e.g.: Energy, Manufacturing & Resources, Financial Services, Public Sector, Retail, Consumer Products & Services, Environmental, Communications/Media, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Other)
 ---
 
 ## Learning from Building a Mobile Application with *Customer_Name* ##
@@ -53,6 +53,14 @@ Define what is the problem(s)/challenges that the customer wants to address with
 	
 	Learnings from the Microsoft team and the customer team
  
+
+## Architecture ##
+
+Architecture Diagrams are required. Example diagram below:
+
+![Xamarin Template Architecture Diagram]({{site.baseurl}}/images/XamarinArchitectureDiagram.png)
+
+
 ## Conclusion ##
 
 Measurable impact resulting from the implementation of the solution
