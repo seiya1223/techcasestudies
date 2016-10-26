@@ -58,7 +58,7 @@ Define what is the problem(s)/challenges that the customer wants to address with
 
 Architecture Diagrams are required. Example diagram below:
 
-![Xamarin Template Architecture Diagram]({{site.baseurl}}/images/XamarinArchitectureDiagram.png)
+![Xamarin Template Architecture Diagram](/images/XamarinArchitectureDiagram.png)
 
 
 ## Conclusion ##
