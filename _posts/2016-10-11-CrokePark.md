@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sound and weather data monitoring within a smart stadium"
+title:  "Croke Park Smart Stadium Project"
 author: "Niall Moran"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
