@@ -15,7 +15,7 @@ verticals: [Smart Cities, Sports, Environmental, Sound]
 
 ## Sound and weather data monitoring within a smart stadium ##
 
-Boasting a capacity for 82,300 people, Croke Park stadium is one of the largest stadiums in Europe. As the national home to the Gaelic games and headquarters of the Gaelic Athletic Association (GAA), it hosts numerous high-profile international sporting, cultural, and music events. And now, within this urban test bed infrastructure, lies the perfect Internet of Things (IoT) microcosm: a true “smart stadium”. 
+Boasting a capacity for 82,300 people, Ireland's Croke Park stadium is one of the largest stadiums in Europe. As the national home to the Gaelic games and headquarters of the Gaelic Athletic Association (GAA), it hosts numerous high-profile international sporting, cultural, and music events. And now, within this urban test bed infrastructure, lies the perfect Internet of Things (IoT) microcosm: a true “smart stadium”. 
 
 The Croke Park Smart Stadium project is a collaboration between GAA, Dublin City University (DCU), Intel, and Microsoft to further innovation around IoT. Intel has strategically positioned sensors and gateways throughout the stadium to enable a range of environmental monitoring, safety, and fan experience use cases. These edge gateways compute and communicate with the sensors, collecting enormous amounts of diverse types of data and storing them on the Microsoft Azure cloud platform.
 
