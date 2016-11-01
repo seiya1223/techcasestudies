@@ -64,7 +64,7 @@ Each customer has its dedicated OCC infrastructure, and the number of virtual ma
 We spent the first day and a half establishing a Value Stream Map (VSM) of the current delivery process, from conception to production.
 This activity generated great discussions among the team and allowed everyone to see the big picture—not just their part of the process.
 
-<img src="/images/orckestra2.jpg" alt="Value Stream Mapping" style="width: 90%;"/>
+![Value Stream Mapping]({{site.baseurl}}/images/orckestra2.jpg)
 
 As the Value Stream Map shows, there are actually two teams working sequentially to deliver the final product.  
 The first team (Product Core Team) is working on the core platform (OCC), features that are common to every customer. Its processes are described by the top row in the image above. 
@@ -106,7 +106,7 @@ Looking ahead, Orckestra's team is aware they will need to change the way they w
 
 Once the mapping was complete, we moved it to a place where everyone could see and discuss it.
 
-![Value Stream Mapping](/images/orckestra3.jpg)
+![Value Stream Mapping]({{site.baseurl}}/images/orckestra3.jpg)
 
 *Check the resources section if you want to see the VSM in HD.*
 
@@ -126,7 +126,7 @@ So we started [this project on GitHub called loadimpact-vsts-extension](https://
 
 The idea is simple: Reach the [LoadImpact.com API](http://developers.loadimpact.com/api/index.html) and start some scenarios already set up whenever they want thanks to a Build or Release step :
 
-![Load Impact VSTS Extension](/images/OrckestraLoadImpactExt.png)
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpactExt.png)
 
 For now, this extension is really straightforward but it helps Orckestra to launch some recursive tests such as:
 * Basic API Calls to check if the important parts of the application are responding with the correct SLA defined.
@@ -136,15 +136,15 @@ Behind the scenes, we used (TypeScript, Gulp, NPM...).
 
 The fact that the load tests are directly integrated in their pipeline helps Orckestra to have a stronger application at the end, and makes sure the tests are run every time and not manually triggered or forgotten.
 
-![Load Impact VSTS Extension](/images/OrckestraRelease.png)
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraRelease.png)
 
 Here is an example of the test "GetGuestCart" launched from VSTS:
 
-![Load Impact VSTS Extension](/images/OrckestraLoadImpact.png)
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpact.png)
 
 When the test is done on Load Impact, Orckestra receives a slack notification:
 
-![Load Impact VSTS Extension](/images/OrckestraSlack.png)
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraSlack.png)
 
 We also started to implement the Application Insights feature inside OCC to track user interactions (see the next sections). In the future, Orckestra will correlate the load test data with the user telemetry one to obtain deeper results and adapt their load scenarios to anticipate the scale.
 
@@ -222,7 +222,7 @@ To mark an `action` as of interest, we simply have to append the object:
 
 We can see that our `actions` are correctly received by Application Insights.
 
-![Application Insight Image](/images/orckestra1.png)
+![Application Insight Image]({{site.baseurl}}/images/orckestra1.png)
  
 A good practice could be to define our expectation before rolling out a new feature. For example: "We expect 10% of our users to post a comment (our new feature) once a day."
 With Application Insights Analytics, we can then create custom queries such as the percentage of sessions where the event `'ADD_COMMENT'` occurred.
@@ -274,7 +274,7 @@ While we discussed a specific implementation of microservices (containers), ther
 
 
 ## Resources ##
-* [The Value Stream Mapping in HD](/images/orckestra_VSM_HD.jpg)
+* [The Value Stream Mapping in HD]({{site.baseurl}}/images/orckestra_VSM_HD.jpg)
 * [Orchestrating containers with Service Fabric](https://blogs.msdn.microsoft.com/azureservicefabric/2016/04/25/orchestrating-containers-with-service-fabric/)
 * [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/)
 * [Running Docker Swarm on Microsoft Azure (Channel 9)](https://channel9.msdn.com/Blogs/containers/Docker-Swarm-Part-1)
