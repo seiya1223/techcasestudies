@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Learnings from a DevOps Hackfest with Orckestra"
