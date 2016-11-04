@@ -10,6 +10,7 @@ excerpt: This article showcases IoT setup for Costa Farms using the Atlas Scient
 language: English
 verticals: Agriculture
 ---
+![Logo]( {{ site.baseurl }}/images/costafarmslogo.png)
 
 [Costa Farms](http://www.costafarms.com/) is a third-generation, family-owned group of companies headquartered in beautiful Miami, Florida (aka, plant paradise!). The company sprouted in 1961 when the founder, Jose Costa Sr., purchased 30 acres south of Miami to grow fresh, vine-ripened tomatoes in the winter and calamondin citrus in the summer. That soon morphed into houseplants, and the Costa Farms family started innovating and introduced new houseplants such as the canela tree, orchids, and Cecilia Aglaonema. Costa Farms sells to big box stores such as Walmart, Home Depot, and Lowe's.
 
@@ -116,7 +117,7 @@ Costa Farms and Microsoft are working on two additional projects to complete usi
 
 ## Conclusion ##
 
-The partnership between Costa Farms and Microsoft is strong and we have agreed to build a "proof of concept" technology-driven set of best practices for their new hydroponic crops, increasing remote monitoring, preventive maintenance, and power of the Microsoft IoT Suite and the latest sensor hardware.
+The partnership between Costa Farms and Microsoft is strong and we have agreed to build a "proof of concept" technology-driven set of best practices for their new crops, increasing remote monitoring, preventive maintenance, and power of the Microsoft IoT Suite and the latest sensor hardware.
 
 ## Testimonials ##
 
@@ -131,7 +132,7 @@ The partnership between Costa Farms and Microsoft is strong and we have agreed t
 > **Mani Mihira Peddada** – BI Architect
 
 ## Resources ##
-[Costa Farms Video](http://www.youtube.com/watch?v=xVkgiIojwCc) 
+[![Costa Farms Video](http://img.youtube.com/vi/xVkgiIojwCc/0.jpg)](http://www.youtube.com/watch?v=xVkgiIojwCc)
 
 [Setting up the **hardware** for pHsensor](https://blogs.msdn.microsoft.com/blainbar/2016/10/25/hardware-assembly-for-the-adafruit-feather-m0-wifi-with-the-atlas-scientific-ph-sensor-for-remotely-monitoring-ph-water-levels-in-microsoft-azure-article-1-or-2/) 
 
