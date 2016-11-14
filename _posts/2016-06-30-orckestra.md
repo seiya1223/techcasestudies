@@ -238,7 +238,7 @@ As of today, the application is built following a single value stream. In the fu
 
 As the current OCC platform has grown to support many use cases over time, Microservices are the right next step to break out the complexity into a set of smaller deployable pieces.  Orckestra is now delivering new services as Microservices and over time will convert some of their existing services to microservices that they can ship separately as well.  We also spent some time investigating containerization of those independent components. Indeed, this would further reduce the lead time by addressing several pain points:
 
-* Ensuring integration tests are running in a production-like environment. Also, a significant cause of scrap rate for integration tests is due to heterogeneous environments.
+* Ensuring integration tests are running in a production-like environment.
 * Faster deployments. Only the image of the component that was updated needs to be redeployed.
 * Easier scaling in production. With tools such as Docker Swarm, scaling becomes almost painless (for stateless components). 
 * Greater flexibility of integration and QA environments deployment. Provisioning and de-provisioning of environments become an extremely fast process.
@@ -255,13 +255,7 @@ The Value Stream Mapping was a challenging activity considering the complexity o
 
 A lot of very interesting ideas on how to improve the process were discussed during this Hackfest, some more doable than others. Most importantly, though, the whole team realizes the value of continuous improvement and they are committed and willing to put a lot of effort into this.  Already since the hackfest, the team has made significant load testing automation improvements, and are near completion of their first Microservices-based service, with more to come.
 
-## General lessons ##
-Some key points to consider:  
 
-* Automated testing needs to always be a top priority, from unit tests to integration and load tests. Being confident in the quality of the code is a prerequisite in order to release it.
-* Monolithic applications work, and can be optimized to a certain extent, but continuous delivery and small batch size can be obtained only by having smaller components with well-defined boundaries.
-
-While we discussed a specific implementation of microservices (containers), there is no simple solution, and many other solutions such as [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/) exist to achieve a comparable result.
 
 
 ## Resources ##
