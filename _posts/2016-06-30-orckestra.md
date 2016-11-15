@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learnings from a DevOps Hackfest with Orckestra"
+title:  "Learnings from a DevOps hackfest with Orckestra"
 author: "William Buchwalter & Julien Stroheker"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -12,8 +12,6 @@ excerpt:  This article is aimed at sharing the learnings from the DevOps Hackfes
 verticals: Retail, Consumer Products & Services
 language: English
 ---
-
-# Learnings from a DevOps Hackfest with Orckestra #
 
 Orckestra teamed up with Microsoft for a week-long Hackfest. 
 During this event we discussed different DevOps practices that could improve their software delivery processes, such as:
@@ -98,7 +96,9 @@ We also decided to explore ways for the platform to deliver smaller updates that
 
 Once the mapping was complete, we moved it to a place where everyone could see and discuss it.
 
+
 ![Value Stream Mapping]({{site.baseurl}}/images/orckestra3.jpg)
+
 
 *Check the resources section if you want to see the VSM in HD.*
 
@@ -116,11 +116,14 @@ During our Hackfest, the QA team took the time to set up some scenarios in their
 
 So we started [this project on GitHub called loadimpact-vsts-extension](https://github.com/julienstroheker/loadimpact-vsts-extension).
 
-The idea is simple: Reach the [LoadImpact.com API](http://developers.loadimpact.com/api/index.html) and start some scenarios already set up whenever they want thanks to a Build or Release step :
+The idea is simple: Reach the [LoadImpact.com API](http://developers.loadimpact.com/api/index.html) and start some scenarios already set up whenever they want thanks to a Build or Release step:
+
 
 ![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpactExt.png)
 
+
 For now, this extension is really straightforward but it helps Orckestra to launch some recursive tests such as:
+
 * Basic API Calls to check if the important parts of the application are responding with the correct SLA defined.
 * Basic Web Calls to check if all the components of the application are responding.
 
@@ -128,23 +131,33 @@ Behind the scenes, we used (TypeScript, Gulp, NPM...).
 
 The fact that the load tests are now being directly integrated in their pipeline helps Orckestra have more efficient testing, and makes sure the tests are run every time and not manually triggered.
 
+
 ![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraRelease.png)
 
+
 Here is an example of the test "GetGuestCart" launched from VSTS:
+
 
 ![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpact.png)
 
+
 When the test is done on Load Impact, Orckestra receives a slack notification:
+
 
 ![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraSlack.png)
 
+
 Here is an example of the test "GetGuestCart" launched from VSTS:
+
 
 ![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraLoadImpact.png)
 
+
 When the test is done on Load Impact, Orckestra receives a slack notification:
 
+
 ![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraSlack.png)
+
 
 We also started to implement the Application Insights feature inside OCC to track user interactions (see the next sections). In the future, Orckestra will correlate the load test data with the user telemetry one to obtain deeper results and adapt their load scenarios to anticipate the scale.
 
@@ -220,7 +233,9 @@ To mark an `action` as of interest, we simply have to append the object:
 
 We can see that our `actions` are correctly received by Application Insights.
 
+
 ![Application Insight Image]({{site.baseurl}}/images/orckestra1.png)
+
 
 A good practice could be to define our expectation before rolling out a new feature. For example: "We expect 10% of our users to post a comment (our new feature) once a day."
 With Application Insights Analytics, we can then create custom queries such as the percentage of sessions where the event `'ADD_COMMENT'` occurred.
