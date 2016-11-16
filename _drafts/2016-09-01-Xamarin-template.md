@@ -62,7 +62,7 @@ This section should include the following details:
 
 - Architecture diagram/s (**required**). Example below:
 
-  ![Xamarin Architecture Diagram]({{site.baseurl}}/images/templates/xamarinarchitecture.png)
+  ![Xamarin Architecture Diagram](/images/templates/xamarinarchitecture.png)
 
 *If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
