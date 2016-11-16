@@ -56,7 +56,7 @@ This section should include the following details:
 
 - Architecture diagram/s (**required**). Example below:
 
- ![IoT Architecture Diagram]({{site.baseurl}}/images/templates/iotarchitecture.png)
+ ![IoT Architecture Diagram](/images/templates/iotarchitecture.png)
 
 **Directions for adding images:**
 
