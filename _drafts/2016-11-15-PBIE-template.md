@@ -63,7 +63,7 @@ This section should include the following details:
 
 - Architecture diagram/s (**required**). Example below:
 
-  ![Power BI Embedded Architecture Diagram]({{site.baseurl}}/images/templates/powerbiearchitecture.png)
+  ![Power BI Embedded Architecture Diagram](/images/templates/powerbiearchitecture.png)
 
 *If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
