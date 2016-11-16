@@ -72,7 +72,7 @@ This section should include the following details:
 
   `![Description of the image]({{site.baseurl}}/images/projectname/myimage.png)`
 
-  - Here’s an example: 
+  Here’s an example: 
 
   `![Value Stream Mapping]({{site.baseurl}}/images/orckestra/orckestra2.jpg)`
 
