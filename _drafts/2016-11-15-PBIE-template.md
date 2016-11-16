@@ -1,24 +1,22 @@
 ---
 layout: post
 title:  "Add title with customer name here"
-author: "Kaitlyn Marx"
+author: "Malgosia Mazany"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-09-01
-categories: [Mobile Application Development with Xamarin]
+date:   2016-11-15
+categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: Add short description of what this article is about.
+excerpt: Add a short description of what this article is about.
 language: The language of the article (e.g.: [English])
 verticals: The vertical markets this article has focus on (e.g.: [Energy, Manufacturing & Resources, Financial Services, Public Sector, “Retail, Consumer Products & Services”, Environmental, Communications/Media, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Other])
 ---
-
-
 Begin with an intro statement with the following details:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Solution overview
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Key technologies used (ie.  Azure Services, VSTS/TFS, hockeyapp/test cloud)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Key technologies used (ie. Power BI Embedded, Azure Resource Manager, etc.)
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Core Team: Names, roles and Twitter handles 
 
@@ -41,7 +39,9 @@ This section will contain general information about the customer, including the 
 ## Problem statement ##
 
 
-This section will define the problem(s)/challenges that the customer wants to address with a Xamarin mobile application solution. Include things like costs, customer experience, etc.
+This section will define the problem(s)/challenges that the customer wants to address with a Power BI Embedded solution. Include things like costs, customer experience, etc.
+
+Describe the consumer (end user) of the dashboard. 
  
 *If you’d really like to make your write-up pop, include a customer quote that highlights the customer’s problem(s)/challenges.*
 
@@ -56,7 +56,7 @@ This section should include the following details:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	What was worked on and what problem it helped solve.
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Challenges you encountered and how you solved them.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	The data pipeline architecture, details, challenges/workarounds, origin of the data and the overall architecture.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Technical details of how this was implemented.
 
@@ -66,7 +66,7 @@ This section should include the following details:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Architecture diagram/s (*required*). Example below:
 
-![Xamarin Architecture Diagram]({{site.baseurl}}/images/templates/xamarinarchitecture.png)
+![Power BI Embedded Architecture Diagram]({{site.baseurl}}/images/templates/powerbiearchitecture.png)
 
 *If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
@@ -115,3 +115,4 @@ In this section, include a list of links to resources that complement your story
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	GitHub repos
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Etc…
+

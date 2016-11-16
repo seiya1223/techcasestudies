@@ -1,24 +1,22 @@
 ---
 layout: post
 title:  "Add title with customer name here"
-author: "Kaitlyn Marx"
+author: "Matt Zanner"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-09-01
-categories: [Mobile Application Development with Xamarin]
+date:   2016-05-19
+categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: Add short description of what this article is about.
+excerpt: Add a short description of what this article is about.
 language: The language of the article (e.g.: [English])
 verticals: The vertical markets this article has focus on (e.g.: [Energy, Manufacturing & Resources, Financial Services, Public Sector, “Retail, Consumer Products & Services”, Environmental, Communications/Media, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Other])
 ---
-
-
 Begin with an intro statement with the following details:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Solution overview
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Key technologies used (ie.  Azure Services, VSTS/TFS, hockeyapp/test cloud)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Key technologies used
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Core Team: Names, roles and Twitter handles 
 
@@ -41,7 +39,7 @@ This section will contain general information about the customer, including the 
 ## Problem statement ##
 
 
-This section will define the problem(s)/challenges that the customer wants to address with a Xamarin mobile application solution. Include things like costs, customer experience, etc.
+This section will define the problem(s)/challenges that the customer wants to address with the hackfest. It should also describe how the problems have been identified and what the current situation is (including metrics like the lead time).
  
 *If you’d really like to make your write-up pop, include a customer quote that highlights the customer’s problem(s)/challenges.*
 
@@ -50,23 +48,22 @@ This section will define the problem(s)/challenges that the customer wants to ad
 ## Solution, steps, and delivery ##
 
 
-The majority of your win artifacts will be included in this section, including (but not limited to) the following: Source code snippets, pictures, drawings, architectural diagrams, value stream mappings and demo videos.
+The majority of your win artifacts will be included in this section, including (but not limited to) the following: Pictures, drawings, value stream mappings, architectural diagrams and demo videos.
 
 This section should include the following details:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	What was worked on and what problem it helped solve.
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Challenges you encountered and how you solved them.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Value Stream Mapping description and how it helped in the exercise.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Technical details of how this was implemented.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	What was worked on and what problem it helped solve.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	DevOps practice area improved.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Pointers to references or documentation.
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Learnings from the Microsoft team and the customer team.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Architecture diagram/s (*required*). Example below:
-
-![Xamarin Architecture Diagram]({{site.baseurl}}/images/templates/xamarinarchitecture.png)
 
 *If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
@@ -103,6 +100,9 @@ This section will briefly summarize the technical story with the following detai
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Details on how the customer plans to proceed or what more they hope to accomplish.
 
 *If you’d really like to make your write-up pop, include a customer quote highlighting impact, benefits, general lessons, and/or opportunities.*
+
+## Source code ##
+This section should include links to the GitHub repo/s that include all of the source code for the project. 
 
 
 ## Additional resources ##
