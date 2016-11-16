@@ -60,7 +60,7 @@ This section should include the following details:
 
 - Architecture diagram/s (**required**). Example below:
 
- ![App Service Architecture Diagram]({{site.baseurl}}/images/templates/appservicearchitecture.png)
+ ![App Service Architecture Diagram](/images/templates/appservicearchitecture.png)
 
 *If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
