@@ -23,8 +23,10 @@ Core team:
  
 In our solution, we created a Windows Presentation Foundation (WPF) app with ClickOnce updates, Azure Functions (serverless computing), web deployment slots, and continuous integration and deployment with Visual Studio Team Services.  The solution used a USB RFID reader to read student IDs to accelerate attendance taking.
  
+
+<img src="{{ site.baseurl }}/images/IllinoisTech/IllonoisTech.png" width="300">
+
 ## Customer ##
-![Illinois Tech Logo]({{ site.baseurl }}/images//IllinoisTech/IllonoisTech.png)
 
 The [Illinois Institute of Technology](https://web.iit.edu/) (IIT), also known as Illinois Tech, is a private, technology-focused, research university offering undergraduate and graduate degrees in engineering, science, architecture, business, design, human sciences, applied technology, and law.
 
@@ -53,6 +55,7 @@ The future state in the value stream mapping shows that lead time stayed about t
 ![Future state]({{ site.baseurl }}/images//IllinoisTech/FutureState.png)
 
 **Technical Details**
+
 We call the application *Taking Names*.  We wrote a Windows Presentation Foundation (WPF) client and used Azure App Service to host the ClickOnce web application for deploying the WPF application.  We can publish the Taking Names WPF client directly from Visual Studio to our Azure App Service web application.  This ClickOnce publishing of the app provides automatic updates of the client to the attendance workstation whenever there are new features or updates.  
 
 The Taking Names application uses a USB RFID card reader to read student RFID ID cards and check students in.  We created a series of Azure Functions that provide the cloud computing and storage of application data via Azure Table storage.  Azure Functions allow student names and IDs for all IPRO courses to be captured.  Azure Functions also provide the functionality to look up student RFID card IDs and associate them to students.  Additionally, Azure Functions are used to capture student attendance records, log system activity and events, and all other computing needs of the application.
@@ -61,25 +64,31 @@ We integrated Taking Names Git repository with Azure App Functions Continuous In
 
 We used Azure Function's auto-scale capability to ensure the Azure Functions could meet the widely varied demand the system sees with high peaks of usage.  We set up an Azure web deployment slot to deploy from version control to staging to allow for testing and used Azure's Virtual IP swap to move seamlessly from staging to production by swapping IP (e.g., not copying bits).     
 
-[![Illinois Tech taking names Demo Video](http://img.youtube.com/vi/f9MUBwbG1OA/0.jpg)](http://www.youtube.com/watch?v=f9MUBwbG1OA)
-
 *Illinois Tech Taking Names demo video*
 
-![Students scan their ID cards to indicate they are attending class.]({{ site.baseurl }}/images/IllinoisTech/1.JPG)
+[![Illinois Tech taking names Demo Video](http://img.youtube.com/vi/f9MUBwbG1OA/0.jpg)](http://www.youtube.com/watch?v=f9MUBwbG1OA)
+
 
 *Students scan their ID cards to indicate they are attending class*
 
-![Jeremy Alexis addresses this large IPRO Class]({{ site.baseurl }}/images/IllinoisTech/2.JPG)
+![Students scan their ID cards to indicate they are attending class.]({{ site.baseurl }}/images/IllinoisTech/1.JPG)
+
 
 *Jeremy Alexis addresses his large IPRO class*
+
+![Jeremy Alexis addresses this large IPRO Class]({{ site.baseurl }}/images/IllinoisTech/2.JPG)
+
+
 
 **Architecture**
 
 The client application is a WPF app using ClickOnce deployment to allow for easy updating.  The application talks to a set of Azure Functions that provide lookup, identification, and capture of student attendance records.  The Azure Functions leverage Azure Table storage for durable and expandable cloud storage.
 
+*Taking Names architecture*
+
 ![Taking Names Architecture]({{ site.baseurl }}/images/IllinoisTech/Architecture.png) 
 
-*Taking Names architecture*
+
 
 **Key learnings**
 
