@@ -13,6 +13,7 @@ language: English
 verticals: Education
 ---
 
+<img src="{{ site.baseurl }}/images/IllinoisTech/IllonoisTech.png" width="600">
 
 In this joint development effort, Microsoft teamed up with Illinois Tech's Interprofessional Projects Program (IPRO) to create an easy-to-update client application and a serverless computing back end to greatly speed IPRO course attendance taking. 
 
@@ -22,9 +23,7 @@ Core team:
 - Martin Schray ([@mschray](https://twitter.com/mschray)) – Senior Technical Evangelist, Microsoft
  
 In our solution, we created a Windows Presentation Foundation (WPF) app with ClickOnce updates, Azure Functions (serverless computing), web deployment slots, and continuous integration and deployment with Visual Studio Team Services.  The solution used a USB RFID reader to read student IDs to accelerate attendance taking.
- 
 
-<img src="{{ site.baseurl }}/images/IllinoisTech/IllonoisTech.png" width="300">
 
 ## Customer ##
 
