@@ -89,6 +89,7 @@ The data model looks as follows:
   }
 }
 ```
+
 ### Data stream ###
 
 The SkyAlert devices send different types of packages, according to the data that needs to be reported. They are segmented into four types:
