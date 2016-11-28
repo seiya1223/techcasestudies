@@ -53,7 +53,7 @@ The following screenshots show how to configure app registration against Azure A
 
 *Office 365 app registration in Azure Active Directory*
 
-![App Registration Process in AAD]({{ site.baseurl }}/images/IntuPower/AAD-AppReg2.PNG "App Registration Process in AAD")
+![App Registration Process in AAD]({{ site.baseurl }}/images/IntuPower/AAD-AppReg1.PNG "App Registration Process in AAD")
 
 
 *App permissions in Azure Active Directory*
