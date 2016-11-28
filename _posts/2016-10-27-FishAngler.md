@@ -22,9 +22,9 @@ FishAngler allows anglers to connect and benefit from community data gathered th
 The project team included the following:
 
 - Jonas Stawski [(@jstawski)](https://twitter.com/jstawski) – CTO, FishAngler
-- Joe Raio ([(@joescars)](https://twitter.com/joescars)) – Senior Technical Evangelist, Microsoft
-- Anastasia Zolochevska ([(@azolochevska)](https://twitter.com/azolochevska)) – SDE, Microsoft
-- Zain Rizvi ([(@zainrzv)](https://twitter.com/zainrzv)) – Software Engineer, Microsoft
+- Joe Raio [(@joescars)](https://twitter.com/joescars) – Senior Technical Evangelist, Microsoft
+- Anastasia Zolochevska [(@azolochevska)](https://twitter.com/azolochevska) – SDE, Microsoft
+- Zain Rizvi [(@zainrzv)](https://twitter.com/zainrzv) – Software Engineer, Microsoft
 
 *FishAngler and Microsoft at the hackfest* 
 
