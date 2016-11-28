@@ -18,6 +18,7 @@ Microsoft teamed up with [Intupower](http://www.intupower.com) to build an Azure
 
 
 Core team:
+
 * [Mo Hasan](http://www.mzhasan.com/) – Senior Managing Partner, Intupower
 * [Misty Bright](http://www.mistybright.com/) – Managing Partner, Intupower
 * [Mostafa Elzoghbi](http://www.twitter.com/mostafaelzoghbi) – Senior Technical Evangelist, Microsoft
