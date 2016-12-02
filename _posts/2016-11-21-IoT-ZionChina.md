@@ -36,9 +36,15 @@ Microsoft DX China:
 - Shijun Liu – Technical Evangelist
 - Michael Li – Technical Evangelist
 
+*The Zion China and Microsoft DX teams at the hackfest*
+
+![Hackfest]({{ site.baseurl }}/images/ZionChina10_Team02.jpg)
+
+
+
 ## Customer profile ##
 
-[Zion China Technology Co., Ltd.](http://www.zionchina.com/p/en/home/) (Beijing) is a mobile Internet healthcare company that focuses on improving the health and well-being of its customers through innovative technology. It builds products that can improve the quality of life for patients with chronic diseases by helping them better manage their illnesses on a daily basis.
+[Zion China Technology Co., Ltd.](http://www.zionchina.com) (Beijing) is a mobile Internet healthcare company that focuses on improving the health and well-being of its customers through innovative technology. It builds products that can improve the quality of life for patients with chronic diseases by helping them better manage their illnesses on a daily basis.
  
 Zion China created the E-Followup glucose management cloud platform. They propose a new "five-wheeled train" for diabetes management involving glucose metabolism, pharmacokinetics, dietary dynamics, exercise kinetics, and patient self-motivation. This management approach fills the gaps in the field of precision medical management in China and pioneers the field of precision diabetes management.
 
@@ -355,11 +361,6 @@ Zion China and Microsoft DX China worked together to determine how to integrate 
 *The Zion China and Microsoft DX teams working together*
 
 ![Team at work]({{ site.baseurl }}/images/ZionChina09_Team01.jpg)
-
-
-*The Zion China and Microsoft DX teams at the hackfest*
-
-![Hackfest]({{ site.baseurl }}/images/ZionChina10_Team02.jpg)
 
 
 *Discussing the architecture redesign and key issues*
