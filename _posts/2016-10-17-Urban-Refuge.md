@@ -58,7 +58,7 @@ As the Urban Refuge team began to look at possible technical solutions, they wan
 
 The solution has several components to it. The most important components are:
 
-1. [Create Xamarin Forms application using iconography](#1.-create-xamarin-forms-application-using-iconography)
+1. [Create Xamarin Forms application using iconography](#1-create-xamarin-forms-application-using-iconography)
 2. [Create ASP.NET Application API and Management Portal](#2-create-aspnet-application-for-api-and-management)
 3. [Integrate Azure B2C for Authentication](#3-integrate-azure-b2c-for-authentication)
 4. [Localization of resources](#4-localization-of-resources)
@@ -69,7 +69,7 @@ A high-level view of the architecture is as follows:
 
 ![architecture diagram]({{ site.baseurl }}/images/urbanrefuge/ur-architecture.png)
 
-### 1. Create Xamarin Forms application using iconography
+### 1 Create Xamarin Forms application using iconography
 
 The first step to the solution was to create a Xamarin Forms application for Android and iOS. The Urban Refuge team designed the UX of the application to be simple and straightforward with very little wording. By using minimal words, the design becomes more inclusive for all users despite their level of literacy. An added benefit of using iconography is raising the accessibility level for people who are color blind. You can learn more about inclusive design at [Microsoft Design](https://www.microsoft.com/en-us/design/inclusive). 
 
