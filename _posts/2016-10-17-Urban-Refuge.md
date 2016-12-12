@@ -50,20 +50,20 @@ As the Urban Refuge team began to look at possible technical solutions, they wan
 
 1. Urban Refuge is a small team that wanted to be able to develop a solution without the cost and complexity of maintaining multiple codebases. Since the application has the requirement to provide information in both English and Arabic, they wanted to make sure that the localization they did could be applied to both the iOS and Android apps. This was addressed using [Xamarin Forms localization](#localization-of-resources).  
 
-2. Urban Refuge needed to make sure they could test the solution in a timely fashion with their beta testers on the ground in Amman, Jordan, to validate all the geo-tagged locations and get direct feedback from the testers. Using the DevOps practice of [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp), they were able to address this concern by enabling builds to be deployed on demand and bypassing official distribution channels.
+2. Urban Refuge needed to make sure they could test the solution in a timely fashion with their beta testers on the ground in Amman, Jordan, to validate all the geo-tagged locations and get direct feedback from the testers. Using the DevOps practice of [Automated Deployment via VSTS and HockeyApp](#automated-deployment-via-vsts-and-hockeyapp), they were able to address this concern by enabling builds to be deployed on demand and bypassing official distribution channels.
 
-3. Urban Refuge wanted to be able to understand which resources refugees are searching for and using. The [integration with HockeyApp](#5-usage-metrics-via-hockeyapp-integration) allowed them to be able to see exactly which filters and resources were most popular.
+3. Urban Refuge wanted to be able to understand which resources refugees are searching for and using. The [integration with HockeyApp](#usage-metrics-via-hockeyapp-integration) allowed them to be able to see exactly which filters and resources were most popular.
 
 ## Solutions, steps, and delivery ##
 
 The solution has several components to it. The most important components are:
 
-1. [Create Xamarin Forms application using iconography](#1-create-xamarin-forms-application-using-iconography)
-2. [Create ASP.NET Application API and Management Portal](#2-create-aspnet-application-for-api-and-management)
-3. [Integrate Azure B2C for Authentication](#3-integrate-azure-b2c-for-authentication)
-4. [Localization of resources](#4-localization-of-resources)
-5. [Usage metrics via HockeyApp Integration](#5-usage-metrics-via-hockeyapp-integration)
-6. [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp)
+1. [Create Xamarin Forms application using iconography](#create-xamarin-forms-application-using-iconography)
+2. [Create ASP.NET Application API and Management Portal](#create-aspnet-application-for-api-and-management)
+3. [Integrate Azure B2C for Authentication](#integrate-azure-b2c-for-authentication)
+4. [Localization of resources](#localization-of-resources)
+5. [Usage metrics via HockeyApp Integration](#usage-metrics-via-hockeyapp-integration)
+6. [Automated Deployment via VSTS and HockeyApp](#automated-deployment-via-vsts-and-hockeyapp)
 
 A high-level view of the architecture is as follows:
 
