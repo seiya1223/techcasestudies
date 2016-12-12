@@ -48,7 +48,7 @@ Urban refugees make up 78% of the 655,000 registered Syrian refugees in Jordan. 
 
 As the Urban Refuge team began to look at possible technical solutions, they wanted to address several concerns around implementation, feedback, and testing:
 
-1. Urban Refuge is a small team that wanted to be able to develop a solution without the cost and complexity of maintaining multiple codebases. Since the application has the requirement to provide information in both English and Arabic, they wanted to make sure that the localization they did could be applied to both the iOS and Android apps. This was addressed using [Xamarin Forms localization](#4-localization-of-resources).  
+1. Urban Refuge is a small team that wanted to be able to develop a solution without the cost and complexity of maintaining multiple codebases. Since the application has the requirement to provide information in both English and Arabic, they wanted to make sure that the localization they did could be applied to both the iOS and Android apps. This was addressed using [Xamarin Forms localization](#localization-of-resources).  
 
 2. Urban Refuge needed to make sure they could test the solution in a timely fashion with their beta testers on the ground in Amman, Jordan, to validate all the geo-tagged locations and get direct feedback from the testers. Using the DevOps practice of [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp), they were able to address this concern by enabling builds to be deployed on demand and bypassing official distribution channels.
 
