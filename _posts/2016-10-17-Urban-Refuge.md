@@ -58,7 +58,7 @@ As the Urban Refuge team began to look at possible technical solutions, they wan
 
 The solution has several components to it. The most important components are:
 
-1. [Create Xamarin Forms application using iconography](#1-create-xamarin-forms-application-using-iconography)
+1. [Create Xamarin Forms application using iconography](#1.-create-xamarin-forms-application-using-iconography)
 2. [Create ASP.NET Application API and Management Portal](#2-create-aspnet-application-for-api-and-management)
 3. [Integrate Azure B2C for Authentication](#3-integrate-azure-b2c-for-authentication)
 4. [Localization of resources](#4-localization-of-resources)
