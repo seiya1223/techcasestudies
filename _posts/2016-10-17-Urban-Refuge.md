@@ -69,7 +69,7 @@ A high-level view of the architecture is as follows:
 
 ![architecture diagram]({{ site.baseurl }}/images/urbanrefuge/ur-architecture.png)
 
-### 1 Create Xamarin Forms application using iconography
+### 1. Create Xamarin Forms application using iconography
 
 The first step to the solution was to create a Xamarin Forms application for Android and iOS. The Urban Refuge team designed the UX of the application to be simple and straightforward with very little wording. By using minimal words, the design becomes more inclusive for all users despite their level of literacy. An added benefit of using iconography is raising the accessibility level for people who are color blind. You can learn more about inclusive design at [Microsoft Design](https://www.microsoft.com/en-us/design/inclusive). 
 
