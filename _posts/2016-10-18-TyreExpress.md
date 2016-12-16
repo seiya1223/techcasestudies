@@ -20,6 +20,7 @@ For any fleet company, tire procurement accounts for a significant business cost
 Fluctuations in pressure and temperature can have a dramatic effect on the life span of a tire. Monitoring these parameters and taking preemptive measures can enhance their useful life. With this in mind, Tyre Express is developing an IoT-based platform to monitor and measure tire performance. 
 
 The solution will benefit various stakeholders as follows: 
+
 - Fleet operators will see reduced stoppages caused by premature tire failure, resulting in increased availability of the fleet.
 - Fleet operators and OEMs will get detailed analysis of the performance of the tire. (Details below.)
 - Depending on the business case, the Tyre Express team intends to share the data accordingly with the OEMs and other institutions.
@@ -242,7 +243,7 @@ We ran into few challenges as we started developing the solution. We finished an
 
 Here is a quote from the customer:
 
-“We are delighted to partner with Microsoft for the Azure services cloud platform which helps us to deliver an enhanced customer experience. Tires are one of the largest consumable for the fleet operators after fuel. Our IoT platform helps customers monitor tire performance in real time as well as track inventory. Azure enables us to create a superior customer experience by allowing us to seamlessly integrate our devices with the cloud, store and analyze the data, and visualize the same in the form of easy-to-understand dashboards. We can help customers take suitable action based on such inputs to improve operational efficiency, reduce costs, and improve profitability.” 
+> “We are delighted to partner with Microsoft for the Azure services cloud platform which helps us to deliver an enhanced customer experience. Tires are one of the largest consumable for the fleet operators after fuel. Our IoT platform helps customers monitor tire performance in real time as well as track inventory. Azure enables us to create a superior customer experience by allowing us to seamlessly integrate our devices with the cloud, store and analyze the data, and visualize the same in the form of easy-to-understand dashboards. We can help customers take suitable action based on such inputs to improve operational efficiency, reduce costs, and improve profitability.” 
 
 
 
