@@ -31,19 +31,19 @@ Because we wanted to minimize the impact we have on the machine, we developed a 
 
 To develop the service, we took into account all the communications concerns, we created a test plan using a large amount of files, and tested the service under the most probable situations such as network outages and other connectivity problems.
 
-To minimize problems, we took these measures:
+**To minimize problems, we took these measures:**
 
 * The service keeps track of the last file being zipped, and when the service starts (or restarts) it takes all the files it didn't send already.
 * We limit the size of the *Zip* files to avoid having a very large file the first time the service starts after a period of inactivity.
 * We check for connectivity and only send files when we are sure of it.
 * Zipped files are persisted in disk and are only deleted when the file is correctly sent to the cloud.
 
-Two machine learning models will be built with the gathered data:
+**Two machine learning models will be built with the gathered data:**
 
 - The first will be built on the data from in-mold sensors, and will be correlated with a dataset of defective parts. This will greatly enhance the project because it will allow early detection of defective pieces.  
 - In the future, the plan is to build a model to enhance the molding process directly, but for this we will need to retrieve the molding parameters as well.
 
-The main technologies we used:
+**The main technologies we used:**
 
 * IoT Hub, to receive sensor data as events and files.
 * Intel Curie, to gather environmental data.
