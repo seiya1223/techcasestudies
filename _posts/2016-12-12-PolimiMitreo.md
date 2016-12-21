@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How modern IoT technologies are being used to monitor the ancient Mitreo archeological site"
+title:  "How modern IoT technologies are being used to monitor the ancient Mitreo archaeological site"
 author: "Erica Barone, Daniele Antonio Maggio"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -8,7 +8,7 @@ date:   2016-12-21
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a way to remotely monitor conditions at the Mitreo archeological site in Rome. 
+excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a way to remotely monitor conditions at the Mitreo archaeological site in Rome. 
 language: [English]
 verticals: [Cultural Heritage, Public Sector, Smart Cities, Environmental]
 ---
