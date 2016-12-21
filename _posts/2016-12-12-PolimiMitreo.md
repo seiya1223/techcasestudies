@@ -14,11 +14,11 @@ verticals: [Cultural Heritage, Public Sector, Smart Cities, Environmental]
 ---
 
 
-This project focused on the use of IoT technologies to monitor the status of a relevant archaeological site: the Mitreo in the basement of the Circus Maximum in Rome. We worked together with Politecnico di Milano, one of the most important universities in Italy, in order to use data gathered from specific sensors installed inside the Mitreo to remotely monitor CO2, vibrations, temperature, and humidity.
+This project focused on the use of IoT technologies to monitor the status of a relevant archaeological site: the Mitreo in the basement of the Circus Maximus in Rome. We worked together with Politecnico di Milano, one of the most important universities in Italy, in order to use data gathered from specific sensors installed inside the Mitreo to remotely monitor CO2, vibrations, temperature, and humidity.
 
 The Mitreo is a sanctuary discovered in the 1930s in good condition during structural work for the Teatro Nazionale dell’Opera. Probably built in the second century AD, the large building was modified many times, and in the third century AD, its ground floor became a Mitreo. 
 
-*Mitreo at Circus Maximum - Rome*
+*Mitreo at Circus Maximus - Rome*
 
 ![DataVisualization]({{ site.baseurl }}/images/PolimiMitreo/mitreoCircusMaximum.jpg)
 
@@ -49,7 +49,7 @@ Politecnico di Milano is one of the most important universities in Italy and is 
 
 Research has always been linked to education and is a priority commitment that has allowed Politecnico di Milano to achieve high-quality results at an international level, connecting the university to the business world. Research activity moreover constitutes a parallel path to that formed by cooperation and alliances with the industrial system.
 
-For this specific project, the research is related to an important archaeological site in Rome: the Mitreo in the basement of Circus Maximum. Even though our main customer is Politecnico di Milano, it's important to mention that Sovrintendenza Capitolina and University of Trieste also are involved in the project.
+For this specific project, the research is related to an important archaeological site in Rome: the Mitreo in the basement of Circus Maximus. Even though our main customer is Politecnico di Milano, it's important to mention that Sovrintendenza Capitolina and University of Trieste also are involved in the project.
 
 In November, the project was presented by Luca Mottola and Koustabh Dolui at *Sacrum facere*, an important convention dedicated to archaeologists, as shown in the image at the end of this report.
 
@@ -229,7 +229,7 @@ The data visualization is very clear and simple, and researchers can use it to e
 
 ## Going forward ##
 
-Now the end-to-end solution to remotely monitor the Mitreo of Circus Maximum is up and running, and the project team has developed all the skills necessary to create it. In the next few months the system will be tested and used by researchers in order to evaluate the performance of the solution and to understand how to improve it, considering the specific needs that will face them. 
+Now the end-to-end solution to remotely monitor the Mitreo of Circus Maximus is up and running, and the project team has developed all the skills necessary to create it. In the next few months the system will be tested and used by researchers in order to evaluate the performance of the solution and to understand how to improve it, considering the specific needs that will face them. 
 
 Moreover, PoliMi has built strong skills for Azure platforms and can easily recreate a similar architecture for different remote monitoring projects, related to other archaeological sites. 
 
@@ -243,7 +243,7 @@ Customer quote:
 - Github repository for the C# console application running on the field gateway:
 [https://github.com/erryB/Polimi-Mitreo-Console-Application](https://github.com/erryB/Polimi-Mitreo-Console-Application "GitHub repository for the C# console application")
 
-- Information about the Mitreo at Circus Maximum, from Sovrintendenza Capitolina website:
+- Information about the Mitreo at Circus Maximus, from Sovrintendenza Capitolina website:
 [http://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mitreo_del_circo_massimo](http://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mitreo_del_circo_massimo)
 
 - Sacrum Facere convention, the archaeological convention organized in Trieste last November where the project was presented by Luca Mottola and Koustabh Dolui:
