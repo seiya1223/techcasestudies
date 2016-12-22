@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Add title with customer name here"
-author: "Matt Zanner"
+author: "Add author name here"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-05-19
-categories: [DevOps]
+categories: [Mobile DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: Add a short description of what this article is about.
+excerpt: Add a short description of what this article is about, helping a fellow developer understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
 language: The language of the article (e.g.: [English])
 verticals: The vertical markets this article has focus on (e.g.: [Energy, Manufacturing & Resources, Financial Services, Public Sector, “Retail, Consumer Products & Services”, Environmental, Communications/Media, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Other])
 ---
@@ -16,7 +16,7 @@ verticals: The vertical markets this article has focus on (e.g.: [Energy, Manufa
 Begin with an intro statement with the following details:
 
 - Solution overview
-- Key technologies used
+- Key technologies used (make sure to highlight how at least two of the three required technologies (HockeyApp, Xamarin, VSTS) are implemented)
 - Core Team: Names, roles and Twitter handles 
 
  
@@ -36,7 +36,7 @@ This section will define the problem(s)/challenges that the customer wants to ad
  
 ## Solution, steps, and delivery ##
 
-The majority of your win artifacts will be included in this section, including (but not limited to) the following: Pictures, drawings, value stream mappings, architectural diagrams and demo videos.
+The majority of your win artifacts will be included in this section, including (but not limited to) the following: Source code snippets, pictures, drawings, value stream mappings, architectural diagrams and demo videos.
 
 This section should include the following details:
 
@@ -46,7 +46,7 @@ This section should include the following details:
 
 - What was worked on and what problem it helped solve.
 
-- DevOps practice area improved.
+- DevOps practice areas improved.
 
 - Pointers to references or documentation.
  
@@ -88,8 +88,6 @@ This section will briefly summarize the technical story with the following detai
 
 *If you’d really like to make your write-up pop, include a customer quote highlighting impact, benefits, general lessons, and/or opportunities.*
 
-## Source code ##
-This section should include links to the GitHub repo/s that include all of the source code for the project. 
 
 
 ## Additional resources ##
@@ -100,5 +98,7 @@ In this section, include a list of links to resources that complement your story
 - Blog posts
 
 - GitHub repos
+
+- Source code, samples
 
 - Etc…
