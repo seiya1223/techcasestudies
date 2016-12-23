@@ -4,7 +4,7 @@ title:  "A DevOps hackfest helps Millennium move to a Resource Manager model, in
 author: "Miroslav Kubovcik, Marek Lani, and Stanislav Harvan"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-12-21
+date:   2016-12-23
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
