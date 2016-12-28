@@ -5,7 +5,7 @@ author: "James Sturtevant"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-12-12
-categories: [Xamarin]
+categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/urbanrefuge/urbanrefuge.png" #should be ~350px tall
 excerpt: Microsoft teamed up with Urban Refuge to give urban refugees in Amman, Jordan, access to local assistance opportunities via a Xamarin cross-platform mobile application.
