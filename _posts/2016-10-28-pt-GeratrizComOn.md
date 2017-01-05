@@ -31,7 +31,7 @@ Os grandes centros comerciais, operam num mercado competitivo onde têm de gerir
 
 Cada centro comercial tem necessidade de recolher e analisar métricas de consumo, com o objetivo de procurar eficiencia, detectar anomalias de consumo, gerir contractos com fornecedores e reduzir custos. Para tal, é necessário aferir e comparar consumos de diferentes edificios, zonas e segmentado por diferentes tipos de consumos. Prever os consumos afetos a cada utilidade permite também planear picos de necessidade, reduzir penalidades de consumo e reforça a capacidade de negociação com fornecedores. Torna-se preemtório atingir capacidades próximas de tempo real, na obtenção de relatórios, capacidades rápidas de comparação temporal e financeira.
 
-![Leitor de energia]({{ site.baseurl }}/images/geratriz/geratriz04.png)
+![Leitor de energia]({{ site.baseurl }}/images/geratriz/geratriz04.jpg)
 
 
 ## WeMeter ##
@@ -48,14 +48,14 @@ Em termos de negócio, Geratriz, tem como objectivo de curto prazo iniciar o pro
 
 A solução da Geratriz, o WeMeter, requeria um processo de análise sobre as instalações dos seus clientes. O principal motivo prendia-se com a necessidade de instalação de hardware que correspondessem a um conjunto de requisitos técnicos já identificados.
 
--   Instalação electrica requeria técnicos certificados para instalação de leitores de energia e/ou água.
--   A disperção dos leitores pelos edificios varia caso a caso, tendo impacto no número de dispositivos necessários. 
--   A comunicação entre dispostivos e conectividade à Internet, varia conforme a disposição dos edificios.
--   A manutenção dos dispositivos requer deslocação física às instalações dos clientes.
--   A fiabilidade da ligação à Internet está dependente da conectividade GPRS, que se multiplica perante a quantidade de dispositivos.
--   Incapacidade de executar tarefas de manutenção básicas de forma remota.
--   Custos inerentes à aquisição, instalação e manutenção dos dispositivos.
--   Conectividade estabelecida através de protocolos TCP propriatários, de forma insegura.
+-  Instalação electrica requeria técnicos certificados para instalação de leitores de energia e/ou água.
+-  A disperção dos leitores pelos edificios varia caso a caso, tendo impacto no número de dispositivos necessários. 
+-  A comunicação entre dispostivos e conectividade à Internet, varia conforme a disposição dos edificios.
+-  A manutenção dos dispositivos requer deslocação física às instalações dos clientes.
+-  A fiabilidade da ligação à Internet está dependente da conectividade GPRS, que se multiplica perante a quantidade de dispositivos.
+-  Incapacidade de executar tarefas de manutenção básicas de forma remota.
+-  Custos inerentes à aquisição, instalação e manutenção dos dispositivos.
+-  Conectividade estabelecida através de protocolos TCP propriatários, de forma insegura.
 
 
 ### Escalabilidade e resiliencia ###
@@ -82,7 +82,7 @@ Autores:
 - Carlos Quadrado – Development Lead, ComOn 
 - Carlos Simões – Senior Developer, ComOn
 
-![Equipa hackfest]({{ site.baseurl }}/images/geratriz/geratriz05.png)
+![Equipa hackfest]({{ site.baseurl }}/images/geratriz/geratriz05.jpg)
 
 
 ## Solução ##
