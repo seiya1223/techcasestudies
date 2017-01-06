@@ -85,13 +85,13 @@ L'application qui a été utilisée pour réaliser le VSM est composée des serv
 
 Il y a également une application mobile qui consomme l'API mais qui n'a pas été traitée dans le cadre de l'atelier.
 
-![Vue globale de l'application](/images/2016-12-02-engiecrigen/current_architecture.jpg)
+![Vue globale de l'application]({{ site.baseurl }}/images/2016-12-02-engiecrigen/current_architecture.jpg)
 
 ### Value Stream Map ###
 
 Afin de mettre en évidence les points d'améliorations possibles dans la manière de gérer le cycle de vie complet de l'application, nous avons donc réalisé une *Value Stream Map* :
 
-![Version finale du VSM](/images/2016-12-02-engiecrigen/engie_crigen_vsm_final.jpg)
+![Version finale du VSM]({{ site.baseurl }}/images/2016-12-02-engiecrigen/engie_crigen_vsm_final.jpg)
 
 Cette phase extrêmement importante permet de faire en sorte que tous les acteurs autour de la table prennent le temps d'échanger sur la manière dont ils travaillent, dans le but de cartographier les différents processus et mettre en évidence des points d'amélioration possibles. 
 
@@ -109,7 +109,7 @@ Nous avons également mis en évidence que l'ajout de certaines pratiques DevOps
 
 Dans un second temps, nous avons également défini la stratégie de branches à appliquer et la manière dont une nouvelle release devrait se faire sur la nouvelle plateforme :
 
-![Stratégie de branches à mettre en place](/images/2016-12-02-engiecrigen/branching_strategy.jpg)
+![Stratégie de branches à mettre en place]({{ site.baseurl }}/images/2016-12-02-engiecrigen/branching_strategy.jpg)
 
 En résumé, l’idée ici est de dire :
 
@@ -152,7 +152,7 @@ L'environnement de recette est hébergé dans Microsoft Azure dans un cluster Do
 
 Schéma de principe d'un cluster ACS en mode Docker Swarm :
 
-![ACS en mode Docker Swarm](/images/2016-12-02-engiecrigen/acs-swarm2.png)
+![ACS en mode Docker Swarm]({{ site.baseurl }}/images/2016-12-02-engiecrigen/acs-swarm2.png)
 
 
 Le principe est d'utiliser la ligne de commande [Azure Xplat CLI](https://docs.microsoft.com/fr-fr/azure/xplat-cli-azure-resource-manager) pour déployer un nouveau cluster ACS. Cela se fait en une seule commande `azure acs create`, avec les paramètres appropriés et après avoir créé un groupe de ressources pour accueillir le cluster.
@@ -323,17 +323,17 @@ Le choix s'est porté sur Docker Datacenter dans Azure. [Docker Datacenter](http
 
 Docker Datacenter est disponible directement [dans le Marketplace d'Azure](https://azure.microsoft.com/en-us/marketplace/partners/docker/dockerdatacenterdocker-datacenter/), avec support conjoint de Microsoft et de Docker.
 
-![Docker Datacenter](/images/2016-12-02-engiecrigen/docker-datacenter.png)
+![Docker Datacenter]({{ site.baseurl }}/images/2016-12-02-engiecrigen/docker-datacenter.png)
 
 
 Voici l'architecture que nous avons mis en place dans Azure :
 
-![Docker Datacenter](/images/2016-12-02-engiecrigen/docker-datacenter-azure.jpg)
+![Docker Datacenter]({{ site.baseurl }}/images/2016-12-02-engiecrigen/docker-datacenter-azure.jpg)
 
 
 Nous avons regroupé toute les ressources au sein d'un groupe de ressources Microsoft Azure :
 
-![Docker Datacenter](/images/2016-12-02-engiecrigen/ddc-resources-azure.png)
+![Docker Datacenter]({{ site.baseurl }}/images/2016-12-02-engiecrigen/ddc-resources-azure.png)
 
 
 Les 3 grandes composantes sont : les noeuds UCP, DTR et les agents, créés dans des groupes de haute disponibilité différents et derrière des load balancers différents.
@@ -411,7 +411,7 @@ On remarque que l'image d'`api` hérite d'une image `obfuscated1.westeurope.clou
 
 C'est pourquoi nous avons aussi un repo `base-container-images` pour cette image et d'autres; en l'occurrence `mongodb-base` et `mongodb-replicaset`. Dans ce repo `base-container-images`, on a un dossier par image Docker visée avec chacun son fichier `Dockerfile`: 
 
-![](/images/2016-12-02-engiecrigen/depc-1.png)
+![]({{ site.baseurl }}/images/2016-12-02-engiecrigen/depc-1.png)
 
 
 Le nom des images Docker est du type `obfuscated1.westeurope.cloudapp.azure.com/crigen/obfuscated10-nodejs:0.1` et non pas `crigen/obfuscated10-nodejs` pour indiquer que l'image peut être téléchargée depuis la registry `obfuscated1.westeurope.cloudapp.azure.com` et avoir pour numéro de version `0.1` ici.
@@ -696,7 +696,7 @@ La procedure d'installation et de configuration est décrite [sur cette page](ht
 
 Nous avons choisi de créer l'agent dans un nouveau pool, nommé *Crigen-docker*. Une fois l'installation et la configuration terminées, on peut voir cet agent disponible dans les paramètres du projet d'équipe, dans Visual Studio Team Services :
 
-![Agent Queue](/images/2016-12-02-engiecrigen/agent-pool.png)
+![Agent Queue]({{ site.baseurl }}/images/2016-12-02-engiecrigen/agent-pool.png)
 
 
 Nous configurerons ensuite chaque build et la release pour s'exécuter sur cet agent.
@@ -706,24 +706,24 @@ Nous configurerons ensuite chaque build et la release pour s'exécuter sur cet a
 Afin de pouvoir générer les images Docker dans une build Visual Studio Team Services, il est nécessaire d'installer une extension développée par Microsoft et [disponible dans la MarketPlace](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
 Ceci se fait très simplement en cliquant sur le bouton **Install** et en suivant les instructions données par le site :
 
-![Définitions des différentes builds](/images/2016-12-02-engiecrigen/docker_vsts_integration.png)
+![Définitions des différentes builds]({{ site.baseurl }}/images/2016-12-02-engiecrigen/docker_vsts_integration.png)
 
 
 ##### Connexion de GitLab et Docker Trusted Registry dans VSTS #####
 
 Visual Studio Team Services supporte la connexion à des dépôts Git externe, pour cela il faut se rendre dans les paramètres du projet d'équipes, onglet *Services* puis d'ajouter une nouvelle connexion vers un Git externe :
 
-![Définitions des différentes builds](/images/2016-12-02-engiecrigen/external_git.png)
+![Définitions des différentes builds]({{ site.baseurl }}/images/2016-12-02-engiecrigen/external_git.png)
 
 
 Il suffit ensuite de renseigner l'URL du dépôt Git (ici hébergé sur une machine virtuelle dans Azure, dans GitLab) et les informations de connexion :
 
-![Définitions des différentes builds](/images/2016-12-02-engiecrigen/external_git_info.png)
+![Définitions des différentes builds]({{ site.baseurl }}/images/2016-12-02-engiecrigen/external_git_info.png)
 
 
 De la même manière, il est possible de configurer une connexion vers la Docker Trusted Registry dans laquelle devront être poussées les images :
 
-![Définitions des différentes builds](/images/2016-12-02-engiecrigen/vsts_docker_dtr.png)
+![Définitions des différentes builds]({{ site.baseurl }}/images/2016-12-02-engiecrigen/vsts_docker_dtr.png)
 
 
 ##### Mise en place de la définition de build #####
@@ -732,7 +732,7 @@ Une fois la configuration des différents services externes et l'installation de
 
 La première étape consiste à configurer le dépôt Git auquel se lier, via l'onglet *Repository* :
 
-![Configuration du dépôt](/images/2016-12-02-engiecrigen/build-repository.png)
+![Configuration du dépôt]({{ site.baseurl }}/images/2016-12-02-engiecrigen/build-repository.png)
 
 
 Nous avons ensuite besoin de 4 étapes pour chaque image Docker à envoyer dans la trusted registry :
@@ -740,29 +740,29 @@ Nous avons ensuite besoin de 4 étapes pour chaque image Docker à envoyer dans 
 **1.** La récupération du nom de l'image à l'aide d'un script Bash dans le Dockerfile (cf. astuce ci-dessous)
 **2.** La récupération de la version de l'image à l'aide d'un script Bash dans le Dockerfile (cf. astuce ci-dessous)
 
-![Script Bash](/images/2016-12-02-engiecrigen/build-step-1.png)
+![Script Bash]({{ site.baseurl }}/images/2016-12-02-engiecrigen/build-step-1.png)
 
 
 **3.** Le build de l'image
 
-![Build Docker image](/images/2016-12-02-engiecrigen/build-step-2.png)
+![Build Docker image]({{ site.baseurl }}/images/2016-12-02-engiecrigen/build-step-2.png)
 
 
 **4.** Le push de l'image dans la trusted registry
 
-![Push Docker Image](/images/2016-12-02-engiecrigen/build-step-3.png)
+![Push Docker Image]({{ site.baseurl }}/images/2016-12-02-engiecrigen/build-step-3.png)
 
 
 Enfin, il est possible de configurer la build pour s'exécuter sur l'agent Linux créé au préalable. Ceci se fait dans l'onglet *General* :
 
-![Configuration du pool](/images/2016-12-02-engiecrigen/build-general.png)
+![Configuration du pool]({{ site.baseurl }}/images/2016-12-02-engiecrigen/build-general.png)
 
 
 Après avoir réalisé ces quelques étapes simple, à chaque fois que des modifications sont poussées sur la branche master du projet GitLab, une build se déclenche automatiquement et se charge de recréer l'image Docker et de la pousser dans la Docker Trusted Registry.
 
 Ils nous a ensuite suffi de répéter ces opérations pour chaque dépôt GitLab :
 
-![Définitions des différentes builds](/images/2016-12-02-engiecrigen/builds_definitions.png)
+![Définitions des différentes builds]({{ site.baseurl }}/images/2016-12-02-engiecrigen/builds_definitions.png)
 
 
 *ASTUCE*
@@ -783,10 +783,10 @@ Pour récupérer la version, nos utilisons :
 
 Nous pouvons ensuite directement utiliser une tâche d'exécution d'un script bash pour pouvoir extraire le nom de l'image et numéro de version afin de l'affecter à des variables de la build que nous réutilisons par la suite :
 
-![Affectation de la variable au moment de la build](/images/2016-12-02-engiecrigen/set_vsts_variable_at_build_time.png)
+![Affectation de la variable au moment de la build]({{ site.baseurl }}/images/2016-12-02-engiecrigen/set_vsts_variable_at_build_time.png)
 
 
-![Utilisation des variables](/images/2016-12-02-engiecrigen/use_vsts_variable.png)
+![Utilisation des variables]({{ site.baseurl }}/images/2016-12-02-engiecrigen/use_vsts_variable.png)
 
 
 *Pour plus d'information concernant les "logging commands" qui permettent notamment d'affecter des variables en cours de build, consultez [cette page](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/commands.md).* 
@@ -797,22 +797,22 @@ Le but du Release Management est de pouvoir déclencher une séquence de déploi
 
 Ce choix nous a permis de déclarer une build d'intégration continue qui se déclenche automatiquement à chaque fois que les scripts de déploiement sont modifiés et uniquement quand ceux-ci sont modifiés. Cette nouvelle build ne se charge que de copier ces scripts en sortie, pour qu'ils soient disponibles en tant qu'artefacts réutilisables dans le processus de release :
 
-![CI Deploiement](/images/2016-12-02-engiecrigen/ci-deploiement.png)
+![CI Deploiement]({{ site.baseurl }}/images/2016-12-02-engiecrigen/ci-deploiement.png)
 
 
 Ainsi, on retrouve bien les fichiers nécessaires au déploiement en sortie de build :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/ci-artefacts.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/ci-artefacts.png)
 
 
 A partir de là, nous pouvons définir une nouvelle définition de Release dans Visual Studio Team Services, et la lier à la build précédente afin d'en récupérer les artefacts :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/release-artefacts.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/release-artefacts.png)
 
 
 Ensuite, nous avons défini nos deux environnements de Recette (Azure Container Service) et de Production (Docker DataCenter) :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/release-overview.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/release-overview.png)
 
 
 Pour chacun des environnements, le déploiement se fait à l'aide de deux étapes :
@@ -822,17 +822,17 @@ Pour chacun des environnements, le déploiement se fait à l'aide de deux étape
 
 Pour pouvoir faire cela, nous avons tout simplement déclaré les connexions SSH dans les services externes de Visual Studio Team Services :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/services-ssh.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/services-ssh.png)
 
 
 Enfin, ENGIE LAB CRIGEN souhaitait pouvoir valider le passage sur l'environnement de production, nous avons donc utilisé la fonctionnalité d'approbation de Visual Studio Team Services pour faire en sorte qu'une validation manuelle soit obligatoire entre l'environnement de Recette et l'environnement de Production. Pour cela, il suffit de cliquer sur les "..." au niveau de l'environnement de Production et de cliquer sur *Assign approvers* :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/release-assign-approvers.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/release-assign-approvers.png)
 
 
 Cela étant fait, à chaque fois qu'une étape de release sur la Recette se termine, le processus reste en attente d'une approbation manuelle :
 
-![CI artefacts](/images/2016-12-02-engiecrigen/release-waiting-approval.png)
+![CI artefacts]({{ site.baseurl }}/images/2016-12-02-engiecrigen/release-waiting-approval.png)
  
 
 ## Conclusion ##
@@ -850,7 +850,7 @@ Quelques mots du d'ENGIE LAB CRIGEN pour conclure:
 
 ## Références externes ##
 
-- [Value Stream Map (HD)](/images/2016-12-02-engiecrigen/engie_crigen_vsm_final.jpg)
+- [Value Stream Map (HD)]({{ site.baseurl }}/images/2016-12-02-engiecrigen/engie_crigen_vsm_final.jpg)
 
 - [Azure Container Service](https://docs.microsoft.com/en-us/azure/container-service/)
 - [ACS Swarm from Azure CLI](https://blogs.msdn.microsoft.com/jcorioland/2016/07/21/azure-container-service-from-the-azure-cli/)
