@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Designing a scalable, affordable cloud solution for Blue Frog's *Buddy*, the companion robot"
+title:  "Designing a scalable, affordable cloud solution for Blue Frog's Buddy, the companion robot"
 author: "Benoit Le Pichon"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -15,7 +15,8 @@ verticals: [Consumer Robotics]
 
 
 
-[![N|Solid]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/Logo_RGBA.png)](http://www.bluefrogrobotics.com)
+![N Solid]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/Logo_RGBA.png)
+
 
 
 [Blue Frog Robotics](http://www.bluefrogrobotics.com/en/home/) is a 2-year-old startup based in Paris that designs and develops Buddy, which its creators call the first affordable companion robot for the family. They say Buddy is a social robot that connects, protects, and interacts with each family member.
