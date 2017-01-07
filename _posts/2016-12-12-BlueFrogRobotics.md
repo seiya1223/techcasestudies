@@ -355,6 +355,7 @@ There are a lot of small data transfers between Azure and the robot—for exampl
 - Bandwidth cost = $3.8628
 
 > Total cost = $122.1797
+
 > Total cost per Buddy per month = 122.1797 / 2,200 = $0.05554
 
 ### Conclusion
