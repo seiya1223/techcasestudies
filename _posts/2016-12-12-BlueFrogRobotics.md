@@ -5,7 +5,7 @@ author: "Benoit Le Pichon"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2017-01-06
-categories: [IoT]
+categories: [IoT, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: As Blue Frog Robotics prepares to deploy Buddy, the companion robot, it staged a hackfest with Microsoft DX France to design and build a cloud solution that is economical while providing the optimum level of services. 
