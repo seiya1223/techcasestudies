@@ -35,7 +35,7 @@ Voilà la liste des différentes personnes ayant travaillé sur ce sujet :
 #### ENGIE LAB CRIGEN : ####
 
 - Delphine Leblanc, Chef de projet
-- Kévin Mence, Chef de projet
+- Kévin Mencé, Chef de projet IT
 - Eric Sablonière, Activité Informatique
 - Jean-François Philippe, Ingénieur de recherche
 - Alain Chenuaud, Architecte Infrastructure
@@ -846,7 +846,7 @@ Quelques mots du d'ENGIE LAB CRIGEN pour conclure:
 
 *Ce workshop nous a permis de tester l'association de Docker sur Azure et de découvrir les produits commerciaux de Docker (Docker Datacenter, Trusted Registry...)*
 
-*L'accompagnement de Microsoft a permis de voir de nouvelles « bonnes pratiques » concernant pour la mise en place d’un devops, notamment sur l’automatisation des étapes ; bénéficier de l’expertise des intervenants microsoft pour nous aider mettre rapidement des choses en place pendant l’atelier ; seul on aurait tâtonné bien plus longtemps*
+*L'accompagnement de Microsoft a permis de voir de nouvelles « bonnes pratiques » concernant pour la mise en place d’un process devops, notamment sur l’automatisation des différentes étapes et de nous aider à mettre rapidement des choses en place pendant l’atelier*
 
 ## Références externes ##
 
