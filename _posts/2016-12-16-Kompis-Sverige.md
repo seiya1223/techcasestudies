@@ -36,9 +36,9 @@ The need for new Swedes to find someone to learn from is huge, and the willingne
 Kompis Sverige and Microsoft set out to create a technical solution to help accelerate and scale this vision, which Kompis Sverige also wants to export to other countries around the world. They believe the need to connect is truly universal.
 
 In this case study, we will cover the ideas, takeaways, and learnings from developing the custom web app “Bestie” for Kompis Sverige.
-It's a solution that relies heavily on many PaaS (platform as a service) solutions in Microsoft Azure, such as Azure App Service (Web Apps and Functions), Power BI Embedded, Azure Active Directory, and Azure SQL Database, but also begins to integrate work to treat Office 365 as just another PaaS service. 
+It's a solution that relies heavily on many PaaS (Platform as a Service) solutions in Microsoft Azure, such as Azure App Service (Web Apps and Functions), Power BI Embedded, Azure Active Directory, and Azure SQL Database.  
 
-To understand what the Bestie solution achieves, we need to look at how Kompis Sverige operates today. Broken down to its simplest form, its objective is to create friendships based on individual terms and attributes. This is done first by collecting the profile data—for instance, by conducting an interview and asking a set of standardized questions. The data is then collected in a content management system. Later someone will look at this profile while browsing the data to locate a good match based on the answers gathered from the interview.
+To understand what the solution achieves, we need to look at how Kompis Sverige operates today. Broken down to its simplest form, its objective is to create friendships based on individual terms and attributes. This is done first by collecting the profile data—for instance, by conducting an interview and asking a set of standardized questions. The data is then collected in a content management system. Later someone will look at this profile while browsing the data to locate a good match based on the answers gathered from the interview.
 
 The objective of Bestie is to accelerate and extend this procedure and workflow. Allowing profile data to be gathered in a controlled way enables compute power to be put into the mix. Bestie enhances the workflow by allowing self-interviews (published to the web), but most importantly by matching two profiles. What "matching two profiles" means in this context is to introduce them as friends. 
 
@@ -51,12 +51,12 @@ A key issue for the current solution has been security. Much emphasis has been p
 
 ### Key technologies ###
 
-- **Web Apps** – Hosting both the production and a staging environment for Bestie.
-- **Azure Functions** – Data processing to enable real-time data for Power BI Embedded, mail notifications, and other tasks for Bestie.
-- **Power BI Embedded** – Providing the reporting features for Bestie.
-- **Azure SQL Database** – Data storage for Bestie.
-- **Azure Active Directory (Office 365)** – Identity and security for Bestie.
-- **Microsoft Graph** – Provides access to enriching user data for Bestie.
+- **Web Apps** – Hosting both the production and a staging environment.
+- **Azure Functions** – Data processing to enable real-time data for Power BI Embedded, mail notifications, and other tasks.
+- **Power BI Embedded** – Providing the reporting features.
+- **Azure SQL Database** – Data storage.
+- **Azure Active Directory (Office 365)** – Identity and security.
+- **Microsoft Graph** – Provides access to enriching user data.
 
 ### Core team ###
 
@@ -75,13 +75,15 @@ The initiative was conducted by [Kompis Sverige](http://kompissverige.se/) and M
 
 > **"In order for our society to develop and reach its full potential, we need a sense of security and belonging to each other."**
 
+>**-Kompis Sverige**
+
   ![Kompis Sverige Logo]({{ site.baseurl }}/images/bestie/logo.png)
   
 
 
 ## Problem statement ##
 
-The customer operates in a very dynamic way, as they’re changing and evolving their workflow and way of conducting interviews to gather data. This means the underlying data model must support a very flexible and ever-changing nature. This gave us a set of challenges for modeling real-time reports and establishing workflows.
+The customer operates in a very dynamic way, as they’re changing and evolving their workflow and way of conducting interviews to gather data. This means the underlying data model must support a very flexible and ever-changing nature. This gave the team a set of challenges for modeling real-time reports and establishing workflows.
 
 The challenges the solution set out to solve in terms of customer and technical needs can be summarized as such:
 
@@ -105,7 +107,7 @@ The solution is served via a set of Web Apps (a feature of Azure App Service), b
 
 Data visualizations and analyzations are embedded into the solution with Power BI Embedded. 
 
-The data layer consists of three separate Azure SQL Databases: application data, business intelligence data, and backup data. 
+The data layer consists of three Azure SQL Databases: application data, business intelligence data, and backup data.  
 
 Both [SendGrid](https://sendgrid.com/docs/Integrate/Partners/Microsoft_Azure.html) and [46elks](https://46elks.com/) provide additional abilities for the Azure Functions to perform various tasks (such as mailing, SMS texting, and so on).
 
@@ -122,7 +124,7 @@ The solution is hosted in Web Apps (a feature of Azure App Service). The product
 
 **Deployment slots and swapping**
 
-This setup allows us to keep the production-ready and tested code on a single environment (production). This is crucial when minimizing the development disturbance for the users. The users with little room for error and no role in the development are directed to the production environment, whereas the project leaders from Kompis Sverige may access the staging environment to evaluate and test features, before landing in the production environment.
+This setup allows us to keep the production-ready and tested code on a single environment (production). This is crucial when minimizing the development disturbance for the users. The users with little room for error and no role in the development are directed to the production environment, whereas the project leaders from Kompis Sverige may access the staging environment to evaluate and test features, before it is deployed in the production environment.
 
 Once a set of features has matured in the staging environment, a swap of the two environments is made. This occurs almost instantly (done via the Azure Portal) and allows us to keep a backup of the previous production environment. This is useful in scenarios where a mission-critical error may slip into the production environment and we must recover swiftly. In such cases, we will simply swap the environments again, thus minimizing the impact for the users.
 
@@ -133,14 +135,14 @@ Once a set of features has matured in the staging environment, a swap of the two
 
 The solution takes care of collecting profile data from interviews, conducted by anyone getting access to a form from Kompis Sverige. It is crucial that we make sure to deliver and render the form in the user’s web browser as fast as possible.
 
-Apart from actions to take in the application code, there’s a feature we leveraged in the application settings for the web app. By default, web apps are unloaded once they’ve been idle for a while. To counter this, we turned on the AlwaysOn feature in the application settings. This ensures that the web app stays loaded and ready to serve incoming request at any hour.
+There are many things you can do in terms of the application code and execution, but there is a clever feature in the application settings of the Azure Web App that we used. By default, Azure Web Apps are unloaded once they’ve been idle for a while. To counter this, we turned on the AlwaysOn feature in the application settings. This ensures that the web app stays loaded and ready to serve incoming requests at any hour.
 
 ![The AlwaysOn feature for Azure Web Apps]({{ site.baseurl }}/images/bestie/alwayson.png)
 
 
 ### Azure Functions ###
 
-The solution relies heavily on Azure Functions to perform tasks from routine housekeeping to data processing. We developed the Azure Functions alongside the web app, sharing a common code base in C#. 
+The solution relies heavily on Azure Functions to perform tasks from routine housekeeping to data processing. We developed the Azure Functions alongside the Azure Web App, sharing a common code base in C#.  
 
 Each of the Azure Functions has been defined as a timer trigger. This means each and every Azure Function will run independently on a set time interval. We created definitions for this with multiple function.json files in the root folder of the Azure Function.
 
@@ -163,9 +165,9 @@ These are the Azure Functions built for the solution.
 
 **Mail processing (every 15 minutes)** 
 
-This Azure Function takes care of any automated mail deliveries. The users of the solution can configure mails and timeframes for which these mails should be delivered. They can define a timeline of different mails to be delivered depending on the status of interviewed profiles.
+This Azure Function takes care of any automated mail deliveries. The users of the solution can configure mails and timeframes for which these mails should be delivered. They can define a timeline of mails to be delivered depending on the status of interviewed profiles.
 
-We connected the Azure Function to a [SendGrid](https://docs.microsoft.com/en-us/azure/app-service-web/sendgrid-dotnet-how-to-send-email) account, located in the same Azure subscription. The SendGrid service then takes care of delivering the mails with appropriate signatures and formatting. 
+The Azure Function was connected to a [SendGrid](https://docs.microsoft.com/en-us/azure/app-service-web/sendgrid-dotnet-how-to-send-email) account, located in the same Azure subscription. The SendGrid service then takes care of delivering the mails with appropriate signatures and formatting.  
 
 As the Azure Functions are written in C#, integrating with the SendGrid client library is straightforward. We used the NuGet Package Manager to install the [SendGrid.CSharp.Http.Client](https://github.com/sendgrid/csharp-http-client) client library into the project. The Azure Function must then load the assembly, which can be done by referencing the binaries at the top of the *.csx file.
 
@@ -209,11 +211,11 @@ private async Task<bool> SendMailWithSendGridAsync(string to, Mail mail)
 
 Because the data model for the application is an open schema (see [Problem Statement](#problem-statement)), this made it very difficult and compute-intensive to allow for Power BI (or any other data visualization/analyzation solution) to work with. In addition, when building the visualizations (reports), the users should not have access to some of the sensitive application data that exists (see [Security](#security)).
 
-To solve this problem, we built an Azure Function to construct a normalized and flat schema with data. It also takes care of removing much of the sensitive data, allowing only information out of visualization/analyzation interest to be processed. 
+To solve this problem, we built an Azure Function to construct a normalized schema with data. It also takes care of removing much of the sensitive data, allowing only information out of visualization/analyzation interest to be processed. 
 
 The data is then moved into a separate Azure SQL Database (see [Azure Functions](#azure-functions)) by the Azure Function. This is done by creating SQL commands that clean, update, and insert data.
 
-Allowing the customer to build Power BI reports on a great data model and to use [DirectQuery](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/) in Power BI allows the customer to build reports that gather real-time data from the Azure SQL Database.
+Allowing the customer to build Power BI reports on a great data model and to use [DirectQuery](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/) in Power BI. This ensures that reports can be built with real-time data from the Azure SQL Database.
 
 Ultimately, the Power BI visualizations are uploaded and embedded into the solution (see [Power BI Embedded](#power-bi-embedded)). The visualizations will then acquire the newest data processed by the Azure Function, using DirectQuery.
 
@@ -225,7 +227,7 @@ This Azure Function is a pure housekeeping task that makes sure to release these
 
 **Notifications (every 60 minutes)** 
 
-Once a profile has been registered in the system and been given a date for a meeting, a text message (SMS) will be sent, detailing the time and place. The profile is also able to respond to the text, allowing the profile to notify the system if he/she is unavailable. The profile owner will then be able to respond accordingly. 
+Once a profile has been registered in the system and been given a date for a meeting, a text message (SMS) will be sent, detailing the time and place. The interviewed profile is also able to respond to the text, allowing the profile to notify the system if he/she is unavailable. The profile owner will then be able to respond accordingly. 
 
 This Azure Function has the responsibility to send these text messages on the same day that the meetings will occur. These text messages are delivered through [46elks](https://46elks.com/) SMS service and their REST API. The Azure Function issues simple HTTP requests to perform the operations, as such:
 
@@ -333,7 +335,7 @@ We built the reports using the Power BI [DirectQuery](https://powerbi.microsoft.
 
 Because the underlying data model is extremely dynamic, a dedicated Azure Function exists to process and create normalized and anonymized data for Power BI Embedded to query (see [Azure Functions](#azure-functions)).
 
-While the reports are changing as the customer makes adjustments to data they collect and are interested in, a bunch of analyzations can be done right on the dashboard view by anyone with access to the solution. 
+While the reports are changing as the customer makes adjustments to data they collect and are interested in, many analyzations can be done right on the dashboard view by anyone with access to the solution. 
 
 ![Power BI Embedded in Bestie]({{ site.baseurl }}/images/bestie/pbie.gif)
 
@@ -362,7 +364,7 @@ The customer is able to work within Power BI Desktop to build reports and analyz
 
 During the development an SDK was not available for Power BI Embedded for ASP.NET Core, so we had to develop the entire flow using the built-in HTTP-stack. 
 
-To achieve this properly, we developed a few different operations:
+To achieve this properly, we developed a workflow with six operations:
 
 - Import the Power BI Desktop document file.
 - Wait for the import to finish (by polling the state).
@@ -719,7 +721,7 @@ We configured the Azure Active Directory application with two types of roles. Th
 
 Once the Azure Active Directory user has been assigned one of the two roles, a claim containing the role is included within the token that is passed throughout the solution. The token is validated using the signature and the role claim is then trusted and enforced. 
 
-Different content (HTML) is delivered depending on the user role. For instance, administrative actions are not presented to a user with a project leader role. As for the Web API, depending on the operation requested in the Web API, a different role type may be required. If the correct type of role isn’t presented in a Web API operation, we simply block it.
+Different views are displayed depending on the user role. For instance, administrative actions are not presented to a user with a project leader role. As for the Web API, depending on the operation requested in the Web API, a different role type may be required. If the correct type of role isn’t presented in a Web API operation, it is simply blocked.
 
 **Role management**
 
@@ -854,10 +856,10 @@ The Task Runner Explorer finds your Gruntfile and its tasks. The tasks are the o
 
 ## Conclusion ##
 
-The solution demonstrates a scalable and low-maintenance approach, powered by many PaaS (platform as a service) components in Azure. By building a solution in this manner, we allow the customer to scale to any needs with the use of a dial. In addition, we allow for the customer to expand and scale their organization out into the world, while maintaining security and control. 
+The solution demonstrates a scalable and low-maintenance approach, powered by many PaaS (Platform as a Service) components in Azure. By building a solution in this manner, we allow the customer to scale to any needs with the use of a dial. In addition, we allow for the customer to expand and scale their organization out into the world, while maintaining security and control. 
 
 Power BI itself is an incredibly powerful tool that allows customers to explore their data and find new and valuable insights. With Power BI Embedded integrated into the solution itself, these valuable tools are available for any users and customers. In addition, they can continue to evolve their reports and find new, relevant ways to visualize their data and business—and then simply upload and share the reports with ease in the solution.
 
-Azure Functions power the solution with background processing, built with shared code between the Azure Functions and web app. In the future we are looking to expand the use of Azure Functions by plugging in more components and enriching the data and automation further.
+Azure Functions power the solution with background processing, built with shared code between the Azure Functions and web app. In the future, we are looking to expand the use of Azure Functions by plugging in more components and enriching the data and automation further.
 
-Since the solution integrated with Azure Active Directory (and their Office 365), we’re able to enrich the solution with the data living in Office 365. It makes the solution an integral part of their Office 365 experience, and we’re looking to bring even more functionality into the solution using Microsoft Graph.
+Since the solution integrated with Azure Active Directory (and Kompis Sverige's Office 365), we’re able to enrich the solution with the data living in Office 365. It makes the solution an integral part of their Office 365 experience, and we’re looking to bring even more functionality into the solution using Microsoft Graph.
