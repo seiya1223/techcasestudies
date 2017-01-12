@@ -14,9 +14,9 @@ language: English
 ---
 
 
-A growing requirement for Hogarth’s customers was to have more information and insights about the assets they store on Zonza, a digital asset management platform. 
+Hogarth, a marketing implementation agency, found that a growing requirement of its customers was to have more information and insights about the assets they store on Zonza, a digital asset management platform that Hogarth provides. 
 
-Because Hogarth has a typical ISV engagement model, Power BI Embedded seemed like the perfect solution for embedding data insights into the application it currently provides its customers. We designed an architecture and implemented a solution by which Hogarth produces Power BI (PBIX) reports for a customer's data, connects them via direct query to an Azure SQL Database, and pushes the PBIX files into the cloud in a Power BI Embedded workspace collection. 
+Because Hogarth has a typical ISV engagement model, Power BI Embedded seemed like the perfect solution for embedding data insights into the application it currently provides its customers. At a hackathon with Hogarth, we designed an architecture and implemented a solution by which Hogarth produces Power BI (PBIX) reports for a customer's data, connects them via direct query to an Azure SQL Database, and pushes the PBIX files into the cloud in a Power BI Embedded workspace collection. 
 
 Inside their Python application, we used the Power BI Embedded REST APIs to create a JSON Web Token (JWT) and embed an IFRAME that displays the Power BI reports inside an **Insights** tab in their Zonza application.
 
@@ -105,7 +105,7 @@ Looking at future steps, there was conversation around options for loading the d
 
 __Customer journey through architecture:__
 
-1. Customer logs into Zonza application with Zonza credentials.
+1. Customer logs on to Zonza application with Zonza credentials.
 2. Customer clicks on the **Insights** tab.
 3. This makes a request to the Python Token Service to generate a JWT (JSON Web Token).
 4. Once created, the JWT is passed to a Power BI Embedded service in Azure where the token is accepted/declined.
@@ -114,7 +114,7 @@ __Customer journey through architecture:__
 
 __Admin super user journey through architecture:__
 
-1. Log into the Zonza Admin application.
+1. Log on to the Zonza Admin application.
 2. Upload a new PBIX file via a form upload.
 3. Upload calls into Python functions, created to programmatically call the REST APIs and create/upload the (binary) PBIX file to a selected Power BI Embedded workspace collection/workspace.
 
