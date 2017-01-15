@@ -5,7 +5,7 @@ author: "Amy Nicholson"
 author-link: "https://twitter.com/AmyKateNicho"
 #author-image: "{{ site.baseurl }}/images/authors/AmyKateNicho.jpg"
 date:   2017-01-11
-categories: Power BI Embedded
+categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/Amadeus-Logo.png" #should be ~350px tall
 excerpt: In a joint effort with Microsoft, Hogarth built out a proof of concept with Power BI Embedded inside its Zonza digital asset management application to give customers more information about the assets they store.
