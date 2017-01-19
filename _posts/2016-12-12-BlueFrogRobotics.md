@@ -374,9 +374,6 @@ If you are interested in deploying the same architecture, or just want to pick o
 ![]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/team1.jpg)
 
 
-![]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/team4.jpg)
-
-
 ![]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/team2.jpg)
 
 
