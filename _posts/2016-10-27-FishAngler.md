@@ -5,7 +5,7 @@ author: "Joe Raio"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-11-28
-categories: [Azure App Service]
+categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: In this App Service hackfest, Microsoft teamed up with FishAngler to replace existing worker roles and extend functionality of their mobile app using Azure Functions. 
