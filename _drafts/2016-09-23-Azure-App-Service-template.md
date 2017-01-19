@@ -5,7 +5,7 @@ author: "Add author name here"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2016-09-23
-categories: [Azure App Service]
+categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Add a short description of what this article is about, helping a fellow developer understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
