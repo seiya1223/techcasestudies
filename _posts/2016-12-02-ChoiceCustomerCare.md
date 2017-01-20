@@ -36,13 +36,13 @@ Along with the initial architecture and version of the Choice Customer Care appl
 
 We helped build a cross-platform solution that allows hospital patients to use a tablet app to specify what kind of help they need. This then routes that request directly to the appropriate healthcare worker's smartphone via a mobile app. Notifications are sent in real time, and response times are monitored and reported accurately with this system. 
 
-We built the tablet and mobile client apps using [Xamarin.Forms](https://www.xamarin.com/forms), [Visual Studio 2015](https://www.visualstudio.com), and [Visual Studio Team Services (VSTS)](https://azure.microsoft.com/en-us/services/visual-studio-team-services/). The server was built on [Microsoft Azure](www.azure.com), with an [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/?b=16.50) and an exposed [Web App](https://azure.microsoft.com/en-us/services/app-service/web/) written as a web API. 
+We built the tablet and mobile client apps using [Xamarin.Forms](https://www.xamarin.com/forms), [Visual Studio 2015](https://www.visualstudio.com), and [Visual Studio Team Services (VSTS)](https://azure.microsoft.com/en-us/services/visual-studio-team-services/). The server was built on [Microsoft Azure](https://www.azure.com), with an [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/?b=16.50) and an exposed [Web App](https://azure.microsoft.com/en-us/services/app-service/web/) written as a web API. 
 
 The rules for routing patient requests are held in a SQL Server database to track business logic and requests, using [Entity Framework](https://www.asp.net/entity-framework) to more easily work with the data. Real-time [push notifications](https://docs.microsoft.com/en-us/azure/notification-hubs/) are sent using [Azure Notification Hubs](https://azure.microsoft.com/en-us/services/notification-hubs/) so that healthcare providers can receive, accept, or reject requests immediately. Each new app build can be released through the [HockeyApp](https://www.hockeyapp.net/) beta distribution mechanism. Healthcare providers are assigned to beds, not patients, to avoid exposing health identifying information. 
 
 ## Customer profile
 
-[Choice Customer Care](www.choicecustomercare.com) (CCC) is a Chicago-based, family-owned and operated software development shop putting the patient in the center of their hospital experience. With no revenue and no outside funding, CCC has been bootstrapping a minimum viable product of its system to improve communication and service for hospital patients. 
+[Choice Customer Care](http://www.choicecustomercare.com) (CCC) is a Chicago-based, family-owned and operated software development shop putting the patient in the center of their hospital experience. With no revenue and no outside funding, CCC has been bootstrapping a minimum viable product of its system to improve communication and service for hospital patients. 
 
 The Chief Executive Officer (CEO), Mark Mitchell, is an emergency room physician who was inspired to create CCC after feeling that the current hospital environment fails to meet the standards patients should expect for their care. Before seeking help from Microsoft, all aspects of development were handled personally by Mark, with design and finances handled by his wife, Laura Mitchell. Their daughter Alicia Avril handled all software development engineering of the project with the assistance of hired consultant Walid Johnson.
 
@@ -274,7 +274,7 @@ Intellisense in Xamarin.Forms code does not work in Visual Studio 2015. One work
 
 ### VSTS permissions
 
-Martin Schray and Kevin Remde helped us with DevOps, but both of them needed special permissions in VSTS that took us a while to find and grant to them. The trick to doing this is to click the "Users" tab next to Home, which will bring you to a *"_user"* page, such as at *[https://choicecare.visualstudio.com/_user](https://choicecare.visualstudio.com/_user).* Note the screenshot below:
+Martin Schray and Kevin Remde helped us with DevOps, but both of them needed special permissions in VSTS that took us a while to find and grant to them. The trick to doing this is to click the "Users" tab next to Home, which will bring you to a *"_user"* page, such as at *https://choicecare.visualstudio.com/_user*. Note the screenshot below:
 
 ![VSTS User Permissions]({{ site.baseurl }}/images/CCCVSTS2.png) 
 
@@ -321,12 +321,14 @@ A list of links to resources that complement our story:
   - [How to use HockeyApp with Visual Studio Team Services (VSTS)](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs#dashboard-widget-vsts-only-)
   - [Authenticating Users with Azure Mobile Apps](https://developer.xamarin.com/guides/xamarin-forms/web-services/authentication/azure/)
 
+
 - Blog posts
 
   - [Interactive Notifications with Notification Actions](http://www.thinkandbuild.it/interactive-notifications-with-notification-actions/) 
   - [Enhanced Notifications in Android N with Direct Reply](https://blog.xamarin.com/enhanced-notifications-in-android-n-with-direct-reply/)
   - [Gavin Bauman: "HockeyApp for Xamarin.Forms? No Problem!"](http://theothergavin.net/hockey-app-for-xamarin-forms-no-problem/)
   - [Sarah Sexton's Video: HockeyApp in Xamarin.Forms](https://channel9.msdn.com/Blogs/raw-tech/HockeyApp-in-XamarinForms)
+
 
 - GitHub repos
 
