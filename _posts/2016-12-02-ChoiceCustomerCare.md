@@ -4,7 +4,7 @@ title: "Building Xamarin.Forms apps in Azure with Choice Customer Care"
 author: "Sarah Sexton"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/sarahse.jpg"
-date: 2016-12-02
+date: 2017-01-20
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/CCC.png" #should be ~350px tall
