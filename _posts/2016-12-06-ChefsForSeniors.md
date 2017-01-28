@@ -22,7 +22,7 @@ Microsoft and [Chefs For Seniors](http://chefsforseniors.com/) teamed up to buil
 - Ian Philpot ([@tripdubroot](https://twitter.com/tripdubroot)) – Senior Technical Evangelist, Microsoft 
 - Jerry Nixon ([@jerrynixon](https://twitter.com/jerrynixon)) – Senior Technical Evangelist, Microsoft 
 - John Alioto ([@jpalioto](https://twitter.com/jpalioto)) – Principal Technical Evangelist, Microsoft 
-- Lauren Tran [@LtkTran](https:/twitter.com/LtkTran) – Technical Evangelist, Microsoft 
+- Lauren Tran ([@LtkTran](https://twitter.com/LtkTran)) – Technical Evangelist, Microsoft 
 
 The Xamarin app allows chefs to view their clients and plan for upcoming meals. It shows chefs the menus they need to prepare for their clients, and provides them grocery lists with the ability to mark items as purchased. The solution also leverages Azure App Service—both Web Apps and API Apps—to host the admin portal built with Node.js and the database API layer respectively. The admin portal allows an administrator to interact with Azure SQL Database and input new menu items, clients, and chefs.
 
