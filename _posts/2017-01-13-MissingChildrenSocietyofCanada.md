@@ -212,11 +212,7 @@ The team successfully developed the registration for self-identification, the da
 
 With these components in place, the MCSC team can now start building out and improving the services rapidly. Because all features were built alongside a DevOps pipeline, improving and adding more value is much more streamlined.
 
-![Screen shot showing MSC.IRIS icon on mobile device]({{ site.baseurl }}/images/MissingChildrenSocietyofCanada/image10.png)
-
-![Screen shot of login page of mobile app]({{ site.baseurl }}/images/MissingChildrenSocietyofCanada/image11.png)
-
-![Screen shot of Cases page of mobile app]({{ site.baseurl }}/images/MissingChildrenSocietyofCanada/image12.png)
+![Screen shots of mobile app]({{ site.baseurl }}/images/MissingChildrenSocietyofCanada/image10.png)
 
 In addition, during the innovation workshop the team successfully extracted GPS data from Twitter and Facebook and presented that data in the Xamarin application.
  
