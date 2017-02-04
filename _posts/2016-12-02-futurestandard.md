@@ -4,7 +4,7 @@ title:  "Future Standard changing image analytics with serverless platform"
 author: "Masayuki Ota"
 author-link: "https://twitter.com/masota0517"
 #author-image: "{{ site.baseurl }}/images/authors/masota.jpg"
-date:   2016-12-02
+date:   2017-02-04
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/futurestandard/logo.png" #should be ~350px tall
@@ -18,15 +18,14 @@ Future Standard offers a one-stop IoT solution for cross-industry uses to enable
 
 ### Hackfest core team
 
-|Name   |Role   |
-|---|---|
-|Hideyuki Suzuki|CTO|
-|Mikihisa Hayashi|COO|
-|Takashi Kaneda|CAO (Chief Analytics Officer)|
-|Kousuke Ban|Development Manager|
-|Hiroshi Ota|Technical Evangelist, Microsoft|
-|Kazuyuki Nomura|Technical Evangelist, Microsoft|
-|[Masayuki Ota](https://twitter.com/masota0517)|Technical Evangelist, Microsoft|
+- Hideyuki Suzuki – CTO, Future Standard
+- Mikihisa Hayashi – COO, Future Standard
+- Takashi Kaneda – CAO (Chief Analytics Officer), Future Standard
+- Kousuke Ban – Development Manager, Future Standard
+- Hiroshi Ota – Technical Evangelist, Microsoft
+- Kazuyuki Nomura – Technical Evangelist, Microsoft
+- [Masayuki Ota](https://twitter.com/masota0517) – Technical Evangelist, Microsoft
+
 
 ![hack image]({{ site.baseurl }}/images/futurestandard/hack1.jpg)
 <!--
