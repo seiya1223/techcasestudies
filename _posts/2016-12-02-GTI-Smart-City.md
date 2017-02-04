@@ -54,11 +54,11 @@ The GTI Smart City solution architecture can be represented as follows:
 
 *GTI Smart City overview architecture*
 
-![Smart City overview architecture]({{ site.baseurl }}/images/GTISmartCity/GTI_001.PNG)
+![Smart City overview architecture]({{ site.baseurl }}/images/GTISmartCity/GTI_001.png)
 
 *GTI Smart City data platform architecture*
 
-![Smart City data platform architecture]({{ site.baseurl }}/images/GTISmartCity/GTI_002.PNG)
+![Smart City data platform architecture]({{ site.baseurl }}/images/GTISmartCity/GTI_002.png)
 
 ## Device used and code artifacts ##
 
@@ -73,7 +73,7 @@ The v-team, composed of the Microsoft China DX TE team and the GTI dev team, spl
 
 In this segment, the GTI team focused on the Azure IoT Hub SDK integration with GTI Gateways, which is based on the Raspberry Pi 3 running Linux. The Microsoft China DX team helped the GTI hardware engineer to code the Azure IoT Hub SDK in their client, set up and register the gateway with the Azure IoT Hub, connect with the Azure IoT Hub, and send all sensor data to the Azure IoT Hub. The C code is as follows:
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -431,7 +431,7 @@ GTI is planning to begin building the micro-device IoT platform in 2017, which w
 
 *Micro-device IoT platform*
 
-![Micro-device IoT platform]({{ site.baseurl }}/images/GTISmartCity/GTI_021.PNG)
+![Micro-device IoT platform]({{ site.baseurl }}/images/GTISmartCity/GTI_021.png)
 
 ### Business opportunities driven ###
 
@@ -439,11 +439,11 @@ The teams of GTI and Microsoft China set up a scalable working model for broader
 
 *Co-selling to a real-estate customer*
 
-![Co-selling to a Microsoft customer]({{ site.baseurl }}/images/GTISmartCity/GTI_022.PNG)
+![Co-selling to a Microsoft customer]({{ site.baseurl }}/images/GTISmartCity/GTI_022.JPG)
 
 *Government opportunity engagment*
 
-![Government opportunity engagement]({{ site.baseurl }}/images/GTISmartCity/GTI_023.PNG)
+![Government opportunity engagement]({{ site.baseurl }}/images/GTISmartCity/GTI_023.jpg)
 
 ## Great team ##
 
