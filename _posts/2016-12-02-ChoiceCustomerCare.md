@@ -123,10 +123,10 @@ We created a new Xamarin.Forms Shared Project using the Model-View-ViewModel met
 
 Below are some screenshots from the mobile application: 
 
-<img src="{{ site.baseurl }}/images/CCCScreenPhone1.png" width="200">
+<img src="{{ site.baseurl }}/images/CCCScreenPhone1.png" width="400">
 
 
-<img src="{{ site.baseurl }}/images/CCCpush1.png" width="200">
+<img src="{{ site.baseurl }}/images/CCCpush1.png" width="400">
 
 
 **Xamarin, VSTS, and Visual Studio 2015**
