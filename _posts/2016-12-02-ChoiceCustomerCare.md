@@ -261,6 +261,8 @@ Here are some things you will need to know to connect VSTS to HockeyApp for beta
 
     After you have created a signing identity, it will be located at **C:\Users\USERNAME\AppData\Local\Xamarin\Mono for Android\alias\alias.keystore**
 
+    (For additional tips on keeping the signing key secure, see [https://www.visualstudio.com/en-us/docs/build/apps/mobile/secure-certs](https://www.visualstudio.com/en-us/docs/build/apps/mobile/secure-certs).)
+    
     In the example below, we used an alias of "test" with password "test123". The signing identity seems arbitrary, but is required to install to Android devices.
 
     Copy the contents of your signing identity to your project and check it in (required):
