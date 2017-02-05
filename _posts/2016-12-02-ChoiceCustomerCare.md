@@ -123,10 +123,10 @@ We created a new Xamarin.Forms Shared Project using the Model-View-ViewModel met
 
 Below are some screenshots from the mobile application: 
 
-![Screenshot Phone 1]({{ site.baseurl }}/images/CCCScreenPhone1.png)
+<img src="/images/CCCScreenPhone1.png" width="200">
 
 
-![Screenshot Phone 2]({{ site.baseurl }}/images/CCCpush1.png)
+<img src="/images/CCCpush1.png" width="200">
 
 
 **Xamarin, VSTS, and Visual Studio 2015**
@@ -248,11 +248,13 @@ Another lesson we learned during this project was that documentation online leav
 
 Here are some things you will need to know to connect VSTS to HockeyApp for beta distribution with Android:
 
-- Step 1. Go through [How to use HockeyApp with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs). This will link your HockeyApp instance to Visual Studio Team Services.
-- Step 2.	For Android, you need to have a **signed** application to properly distribute to HockeyApp. This is critically important, and repeated again below to drive the point.
+- **Step 1.** Go through [How to use HockeyApp with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs). This will link your HockeyApp instance to Visual Studio Team Services.
+- **Step 2.**	For Android, you need to have a **signed** application to properly distribute to HockeyApp. This is critically important, and repeated again below to drive the point.
 
   To do this the easy way:
+  
     1. Go to the following link and skip to "Archive for Publishing" (essentially just right-click your project and select "Archive"): [Part 1 - Preparing an Application for Release](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_1_-_preparing_an_application_for_release/). 
+    
     2. Next, create a signing identity by following: [Part 2 - Signing the Android Application Package](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_2_-_signing_the_android_application_package/).
 
     (**Note:** If you are able to create a local archive for distribution, and it properly deploys to devices—not an emulator—through side-loading, you can validate that your locally built .apk is sanitized for building in VSTS. That is to say, if it works locally, you can make it work in VSTS.)
@@ -266,13 +268,13 @@ Here are some things you will need to know to connect VSTS to HockeyApp for beta
     ![Keystore]({{ site.baseurl }}/images/CCCkeystore.png)
     
 
-- Step 3. Create a build definition in VSTS similar to the screenshots below. Reference: [Build Your Xamarin App](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin). 
+- **Step 3.** Create a build definition in VSTS similar to the screenshots below. Reference: [Build Your Xamarin App](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin). 
 
   ![VSTS Build Definition for Mobile Code]({{ site.baseurl }}/images/CCCBuildVSTS.gif)
   
 
-- Step 4. If you do not sign and Zipalign your APK, it will NOT install on devices. It *may* install on emulators, but will never install on a device. This is by design in the Android OS. 
-- Step 5. Successful builds should now drop into HockeyApp.
+- **Step 4.** If you do not sign and Zipalign your APK, it will NOT install on devices. It *may* install on emulators, but will never install on a device. This is by design in the Android OS. 
+- **Step 5.** Successful builds should now drop into HockeyApp.
 
   ![HockeyApp Builds]({{ site.baseurl }}/images/CCCHockeyAppBuild.PNG)
 
@@ -287,7 +289,7 @@ Here are some things you will need to know to connect VSTS to HockeyApp for beta
     ![HockeyApp Download Page]({{ site.baseurl }}/images/CCCHockeyAppDownload2.PNG)
     
 
-- Step 6. On your test devices, go to [http://install.hockeyapp.net](http://install.hockeyapp.net) in your mobile browser to get the latest build right from your device. There is even an option to scan a QR code to open the download page on your phone. Enable unknown sources in your device's security settings to allow the installation of apps from sources other than the Google Play Store to do this.
+- **Step 6.** On your test devices, go to [http://install.hockeyapp.net](http://install.hockeyapp.net) in your mobile browser to get the latest build right from your device. There is even an option to scan a QR code to open the download page on your phone. Enable unknown sources in your device's security settings to allow the installation of apps from sources other than the Google Play Store to do this.
 
 **Azure push notifications**
 
@@ -319,7 +321,7 @@ Intellisense in Xamarin.Forms code does not work in Visual Studio 2015. One work
 
 ### VSTS permissions
 
-Martin Schray and Kevin Remde helped us with DevOps, but both of them needed special permissions in VSTS that took us a while to find and grant to them. The trick to doing this is to click the **Users** tab next to Home, which will bring you to a *"_user"* page, such as at *[https://choicecare.visualstudio.com/_user](https://choicecare.visualstudio.com/_user).* Note the screenshot below:
+Martin Schray and Kevin Remde helped us with DevOps, but both of them needed special permissions in VSTS that took us a while to find and grant to them. The trick to doing this is to click the **Users** tab next to Home, which will bring you to a *"_user"* page, such as at *https://choicecare.visualstudio.com/_user.* Note the screenshot below:
 
 ![VSTS User Permissions]({{ site.baseurl }}/images/CCCVSTS2.png) 
 
