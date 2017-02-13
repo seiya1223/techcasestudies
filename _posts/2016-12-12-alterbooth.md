@@ -127,40 +127,40 @@ They knew how to build it from an MSDN site. They succeeded in building a pipeli
 ![build pipeline on VSTS]({{ site.baseurl }}/images/alterbooth/Alterbooth07.png)
 
 
-1. Restore .NET Core.
+- Step 1. Restore .NET Core.
 
   Restore the NuGet package references in the project.
   
   ![Step1:Restore .Net core]({{ site.baseurl }}/images/alterbooth/Alterbooth_1_core_restore.png)
   
   
-2. Build .NET Core. 
+- Step 2. Build .NET Core. 
 
   ![Step2:Build .Net core]({{ site.baseurl }}/images/alterbooth/Alterbooth_2_core_build.png)
   
   
-3. Publish .NET Core.
+- Step 3. Publish .NET Core.
 
   All resources are collected in one folder.
   
   ![Step3:Publish .Net core]({{ site.baseurl }}/images/alterbooth/Alterbooth_3_core_publish.png)
   
   
-4. Copy the files. 
+- Step 4. Copy the files. 
 
   Copy the Docker files to the location in step 3.
   
   ![Step4:Copy files]({{ site.baseurl }}/images/alterbooth/Alterbooth_4_copy.png)
   
   
-5. Build a Docker image. 
+- Step 5. Build a Docker image. 
 
   After collecting the required files in step 4, this step creates a Docker image. The created image is stored in the location written in the "Docker Files" field.
   
   ![Step5:Build a Docker Image]({{ site.baseurl }}/images/alterbooth/Alterbooth_5_docker_build.png)
   
   
-6. Publish a Docker image.
+- Step 6. Publish a Docker image.
 
   The Docker image created in the previous step is registered at Azure.
   
