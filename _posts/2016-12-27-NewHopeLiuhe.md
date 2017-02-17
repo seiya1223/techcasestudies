@@ -99,9 +99,9 @@ Because data security is a key principal of this solution, the team set up sever
 - Use the correct permissions to access the IoT Hub. Only assign the DeviceConnect permissions to the UWP on the gateway device.
 - Secure the communication between the WebJob and the external API gateway by using HTTPS.
 
-*Figure 1. Overall system architecture*
+*Overall system architecture*
 
-![NewHopeLiuHe Smart Chicken Farm solution architecture](/images/NewhopeLiuhe/Architecture.png)
+![NewHopeLiuHe Smart Chicken Farm solution architecture]({{ site.baseurl }}/images/NewhopeLiuhe/Architecture.png)
 
 
 ## Code artifacts ##
@@ -758,30 +758,30 @@ For the Azure Stream Analytics part, there are two major uses in the first stage
 
 *IoT Hub usage*
 
-![NewHopeLiuhe Smart Farming IoT Hub usage](/images/NewhopeLiuhe/IoTHubUsage.png)
+![NewHopeLiuhe Smart Farming IoT Hub usage]({{ site.baseurl }}/images/NewhopeLiuhe/IoTHubUsage.png)
 
 
 *Service Bus queue usage*
 
-![NewHopeLiuhe Smart Farming Service Bus usage](/images/NewhopeLiuhe/ServiceBusQueueUsage.png)
+![NewHopeLiuhe Smart Farming Service Bus usage]({{ site.baseurl }}/images/NewhopeLiuhe/ServiceBusQueueUsage.png)
 
 
 *App Service WebJob usage*
 
-![NewHopeLiuhe Smart Farming Service Bus usage](/images/NewhopeLiuhe/WebJobUsage.png)
+![NewHopeLiuhe Smart Farming Service Bus usage]({{ site.baseurl }}/images/NewhopeLiuhe/WebJobUsage.png)
 
 
 ### Mobile end ###
 
 Users can use the mobile app or the H5 chart embedded in the WeChat app to check the data and control the remote device. Some screenshots from the mobile part are shown below.
 
-![NewHopeLiuhe Smart Farming MobileApp](/images/NewhopeLiuhe/MobileApp.png)
+![NewHopeLiuhe Smart Farming MobileApp]({{ site.baseurl }}/images/NewhopeLiuhe/MobileApp.png)
 
 
-![NewHopeLiuhe Smart Farming wechat1](/images/NewhopeLiuhe/wechat1.png)
+![NewHopeLiuhe Smart Farming wechat1]({{ site.baseurl }}/images/NewhopeLiuhe/wechat1.png)
 
 
-![NewHopeLiuhe Smart Farming wechat2](/images/NewhopeLiuhe/wechat2.png)
+![NewHopeLiuhe Smart Farming wechat2]({{ site.baseurl }}/images/NewhopeLiuhe/wechat2.png)
 
 
 ## Project moment ##
@@ -790,24 +790,24 @@ Below are some photos from the hackfest at the Microsoft office and the deployme
 
 *Coding and debugging the device at the Microsoft office*
 
-![NewHopeLiuhe Smart Farming hackfest1](/images/NewhopeLiuhe/hackfest1.png)
+![NewHopeLiuhe Smart Farming hackfest1]({{ site.baseurl }}/images/NewhopeLiuhe/hackfest1.png)
 
 
-![NewHopeLiuhe Smart Farming hackfest2](/images/NewhopeLiuhe/hackfest2.png)
+![NewHopeLiuhe Smart Farming hackfest2]({{ site.baseurl }}/images/NewhopeLiuhe/hackfest2.png)
 
 
 *Deploying the solution at a chicken farm*
 
-![NewHopeLiuhe Smart Farming deployment1](/images/NewhopeLiuhe/deployment1.png)
+![NewHopeLiuhe Smart Farming deployment1]({{ site.baseurl }}/images/NewhopeLiuhe/deployment1.png)
 
 
-![NewHopeLiuhe Smart Farming deployment2](/images/NewhopeLiuhe/deployment2.png)
+![NewHopeLiuhe Smart Farming deployment2]({{ site.baseurl }}/images/NewhopeLiuhe/deployment2.png)
 
 
-![NewHopeLiuhe Smart Farming deployment3](/images/NewhopeLiuhe/deployment3.png)
+![NewHopeLiuhe Smart Farming deployment3]({{ site.baseurl }}/images/NewhopeLiuhe/deployment3.png)
 
 
-![NewHopeLiuhe Smart Farming deployment4](/images/NewhopeLiuhe/deployment4.png)
+![NewHopeLiuhe Smart Farming deployment4]({{ site.baseurl }}/images/NewhopeLiuhe/deployment4.png)
 
 
 ## Issues experienced ##
