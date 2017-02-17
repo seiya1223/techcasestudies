@@ -55,6 +55,8 @@ During the early design stage, several key requirements and constraints make Win
 - Partner skillset readiness. The Ye Fan team has very strong C# skills around .NET Micro Framework, so the UWP platform is a natural fit. The C# UWP SDK makes it very easy to kick off the development of the app.
 
 On the cloud side, Azure IoT Hub will collect the sensor data and, through Azure Stream Analytics, the data will be archived into Blob storage for backup purposes. Also, an Azure WebJob will directly collect the sensor data from IoT Hub and forward it onto the external API gateway, which will be consumed by the mobile app part. All the location and project information of different deployments is saved in an Azure SQL database.
+
+Technologies used:
     
 - Windows 10 IoT 
 - Azure IoT Hub
