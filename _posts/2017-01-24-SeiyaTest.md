@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "This is my test"
+title:  "This is test page for Seiya"
 author: "SeiyaTest"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/Proxfinity/AuthorsPhoto350.png"
-date:   2017-02-10
+date:   2017-01-24
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/Proxfinity/ProxfinityLogo.png"
