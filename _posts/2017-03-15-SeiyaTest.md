@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "This is my test"
+title:  "This is my test "
 author: "SeiyaTest"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/Proxfinity/AuthorsPhoto350.png"
