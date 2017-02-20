@@ -4,7 +4,7 @@ title:  "This is test page for Seiya"
 author: "SeiyaTest"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/Proxfinity/AuthorsPhoto350.png"
-date:   2017-01-24
+date:   2017-02-10
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/Proxfinity/ProxfinityLogo.png"
