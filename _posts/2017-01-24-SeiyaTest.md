@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "This is my test"
 author: "SeiyaTest"
