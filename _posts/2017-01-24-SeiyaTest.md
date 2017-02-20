@@ -4,11 +4,11 @@ title:  "This is my test"
 author: "SeiyaTest"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/Proxfinity/AuthorsPhoto350.png"
-date:   2017-01-23
+date:   2017-02-10
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/Proxfinity/ProxfinityLogo.png"
-excerpt: In a joint development effort, Microsoft worked with Proxfinity to develop a proof of concept that demonstrates how Proxfinity can leverage Azure IoT Hub and Azure Stream Analytics to support its migration from Parse.
+excerpt: This is my test page.
 verticals: [Social, "Retail, Consumer Products & Services"]
 language: English
 ---
